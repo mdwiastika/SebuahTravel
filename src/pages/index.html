@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./../assets/css/output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  </head>
+  <body class="font-montserrat body-flex">
+    <header class="fixed top-0 left-0 z-40 w-full text-white flex items-center transition-all duration-300 bg-transparent h-[80px] sm:h-[90px] md:h-[120px]">
+      <div class="w-full relative">
+        <div class="relative flex justify-between items-center py-2 md:px-20 px-6">
+          <div class="flex pt-2">
+            <a href="./index.html"><img src="./../assets/img/logo.png" class="block w-auto h-[50px] md:h-[75px] md:w-auto lg:h-[85px] lg:w-auto" alt="Logo East Java" id="logo-east-java" /></a>
+          </div>
+          <div class="flex items-center">
+            <button class="absolute block right-5 nav-button z-50 px-8 group lg:hidden" title="Navbar">
+              <span class="nav-toggle transition duration-300 origin-top-left"></span>
+              <span class="nav-toggle transition duration-300"></span>
+              <span class="nav-toggle transition duration-300 origin-bottom-left"></span>
+            </button>
+            <nav class="absolute top-full left-0 w-full h-screen hidden bg-white lg:bg-transparent z-40 lg:static lg:block lg:w-full lg:h-full">
+              <ul class="text-lg font-semibold lg:flex lg:gap-7 relative lg:static right-[40rem] lg:items-center lg:justify-around z-40 lg:px-8 tracking-widest">
+                <li class="nav-item">
+                  <a href="./index.html" class="hover-navbar active">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a href="./seputar-event.html" class="hover-navbar">Seputar Event</a>
+                </li>
+                <li class="nav-item">
+                  <a href="./destinasi.html" class="hover-navbar">Destinasi</a>
+                </li>
+                <li class="nav-item">
+                  <a href="./kuliner.html" class="hover-navbar">Kuliner</a>
+                </li>
+                <li class="nav-item">
+                  <a href="./travel-kit.html" class="hover-navbar">Travel Kit</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="min-h-screen">
+        <div class="h-screen bg-black/30 absolute z-10"></div>
+        <video autoplay muted loop class="object-cover h-screen w-full">
+          <source src="./../assets/video/final-video-home.webm" type="video/webm" />
+        </video>
+      </section>
+      <section class="min-h-screen"></section>
+      <section class="min-h-screen"></section>
+    </main>
+    <script src="./../assets/js/main.js"></script>
+  </body>
+</html>

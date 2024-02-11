@@ -1,0 +1,101 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.body-flex {
+    @apply flex flex-col min-h-screen;
+}
+
+.nav-toggle {
+    @apply bg-white w-[30px] h-[2px] block my-2 group-hover:bg-green-500 transition;
+}
+
+.nav-active~nav ul li {
+    @apply text-black;
+}
+
+.nav-active span:nth-child(1) {
+    @apply rotate-45;
+}
+
+.nav-active span:nth-child(2) {
+    @apply -translate-x-20 animate-wush;
+}
+
+.nav-active span:nth-child(3) {
+    @apply -rotate-45;
+}
+
+.navbar-scroll {
+    @apply backdrop-blur-sm bg-white/80 h-[65px] sm:h-[80px] md:h-[90px] text-black;
+    box-shadow: inset 0px -2px 0 0 rgba(0, 0, 0, 0.1);
+}
+
+.hover-navbar {
+    @apply hover:text-green-600 transition relative;
+}
+
+.nav-active~nav ul {
+    @apply right-0;
+}
+
+.nav-active~nav ul li {
+    @apply right-[40rem] animate-listItemShow;
+}
+
+.nav-active~nav ul li:nth-child(1) {
+    animation-delay: 0ms;
+}
+
+.nav-active~nav ul li:nth-child(2) {
+    animation-delay: 80ms;
+}
+
+.nav-active~nav ul li:nth-child(3) {
+    animation-delay: 160ms;
+}
+
+.nav-active~nav ul li:nth-child(4) {
+    animation-delay: 240ms;
+}
+
+.nav-active~nav ul li:nth-child(5) {
+    animation-delay: 320ms;
+}
+
+.nav-item {
+    @apply py-3 relative lg:static flex justify-center transition;
+}
+
+nav ul li a::before {
+    content: "";
+    @apply absolute -bottom-[2px] w-full h-[2px] bg-green-600 scale-x-0 transition duration-300 origin-right;
+}
+
+nav ul li a:hover::before {
+    @apply scale-100 origin-left;
+}
+
+.navbar-scroll .active {
+    @apply text-green-800;
+}
+
+@keyframes wush {
+    0% {
+        @apply opacity-100;
+    }
+
+    100% {
+        @apply opacity-0;
+    }
+}
+
+@keyframes listItemShow {
+    0% {
+        @apply right-[40rem];
+    }
+
+    100% {
+        @apply right-0;
+    }
+}
