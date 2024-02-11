@@ -18,11 +18,11 @@ window.addEventListener("load", function () {
   function getScroll(scrollPosition) {
     if (scrollPosition > 0) {
       header.classList.add("navbar-scroll");
-      logo.src = "./../assets/img/logo-scroll.png";
+      logo.src = "./assets/img/logo-scroll.png";
       header.classList.remove("h-[80px]", "sm:h-[90px]", "md:h-[120px]");
     } else {
       header.classList.add("h-[80px]", "sm:h-[90px]", "md:h-[120px]");
-      logo.src = "./../assets/img/logo.png";
+      logo.src = "./assets/img/logo.png";
       header.classList.remove("navbar-scroll");
     }
   }
