@@ -10,6 +10,10 @@
     @apply bg-white w-[30px] h-[2px] block my-2 group-hover:bg-green-500 transition;
 }
 
+.navbar-scroll .nav-toggle {
+    @apply bg-black;
+}
+
 .nav-active~nav ul li {
     @apply text-black;
 }
