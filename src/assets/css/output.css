@@ -664,6 +664,10 @@ video {
   max-width: 400px;
 }
 
+.max-w-\[408px\] {
+  max-width: 408px;
+}
+
 .origin-bottom-left {
   transform-origin: bottom left;
 }
@@ -719,6 +723,10 @@ video {
 .object-center {
   -o-object-position: center;
      object-position: center;
+}
+
+.p-2 {
+  padding: 0.5rem;
 }
 
 .px-6 {
