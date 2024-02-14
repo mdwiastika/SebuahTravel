@@ -71,12 +71,12 @@
     @apply py-3 relative lg:static flex justify-center transition;
 }
 
-nav ul li a::before {
+nav ul li .hover-navbar::before {
     content: "";
     @apply absolute -bottom-[2px] w-full h-[2px] bg-green-600 scale-x-0 transition duration-300 origin-right;
 }
 
-nav ul li a:hover::before {
+nav ul li .hover-navbar:hover::before {
     @apply scale-100 origin-left;
 }
 
