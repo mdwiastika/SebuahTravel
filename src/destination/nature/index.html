@@ -7,17 +7,12 @@
     <link rel="stylesheet" href="./../../assets/css/output.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
   </head>
 
   <body class="font-montserrat body-flex">
     <div class="bg-white fixed z-50 top-0 left-0 right-0 bottom-0" id="loading">
-      <div
-        class="loading absolute -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-      >
+      <div class="loading absolute -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
         <span></span>
         <span></span>
         <span></span>
@@ -25,42 +20,22 @@
         <span></span>
       </div>
     </div>
-    <header
-      class="fixed top-0 left-0 z-40 w-full text-white flex items-center transition-all duration-300 bg-transparent h-[80px] sm:h-[90px] md:h-[120px]"
-    >
+    <header class="fixed top-0 left-0 z-40 w-full text-white flex items-center transition-all duration-300 bg-transparent h-[80px] sm:h-[90px] md:h-[120px]">
       <div class="w-full relative">
-        <div
-          class="relative flex justify-between items-center py-2 md:px-20 px-6"
-        >
+        <div class="relative flex justify-between items-center py-2 md:px-20 px-6">
           <div class="flex pt-2">
             <a href="./../../">
-              <img
-                src="./../../assets/img/logo.png"
-                class="block w-auto h-[40px] md:h-[60px] md:w-auto lg:h-[70px] lg:w-auto"
-                alt="Logo East Java"
-                id="logo-east-java"
-              />
+              <img src="./../../assets/img/logo.png" class="block w-auto h-[40px] md:h-[60px] md:w-auto lg:h-[70px] lg:w-auto" alt="Logo East Java" id="logo-east-java" />
             </a>
           </div>
           <div class="flex items-center">
-            <button
-              class="absolute block right-5 nav-button z-50 px-8 group lg:hidden"
-              title="Navbar"
-            >
-              <span
-                class="nav-toggle transition duration-300 origin-top-left"
-              ></span>
+            <button class="absolute block right-5 nav-button z-50 px-8 group lg:hidden" title="Navbar">
+              <span class="nav-toggle transition duration-300 origin-top-left"></span>
               <span class="nav-toggle transition duration-300"></span>
-              <span
-                class="nav-toggle transition duration-300 origin-bottom-left"
-              ></span>
+              <span class="nav-toggle transition duration-300 origin-bottom-left"></span>
             </button>
-            <nav
-              class="absolute top-full left-0 w-full h-screen hidden bg-white lg:bg-transparent z-40 lg:static lg:block lg:w-full lg:h-full"
-            >
-              <ul
-                class="text-base font-semibold lg:flex lg:gap-7 relative lg:static right-[40rem] lg:items-center lg:justify-around z-40 lg:px-8 tracking-widest"
-              >
+            <nav class="absolute top-full left-0 w-full h-screen hidden bg-white lg:bg-transparent z-40 lg:static lg:block lg:w-full lg:h-full">
+              <ul class="text-base font-semibold lg:flex lg:gap-7 relative lg:static right-[40rem] lg:items-center lg:justify-around z-40 lg:px-8 tracking-widest">
                 <li class="nav-item">
                   <a href="./../../" class="hover-navbar">Home</a>
                 </li>
@@ -68,79 +43,19 @@
                   <a href="./events/" class="hover-navbar">Events</a>
                 </li>
                 <li class="nav-item">
-                  <div
-                    class="relative float-right inline-block text-left group"
-                  >
-                    <div
-                      class="flex justify-center items-center group-hover:text-green-600 active"
-                    >
-                      <button
-                        type="button"
-                        id="menu-button"
-                        aria-expanded="true"
-                        aria-haspopup="true"
-                      >
-                        Destination
-                      </button>
-                      <svg
-                        class="-mr-1 h-5 w-5"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
-                        aria-hidden="true"
-                      >
-                        <path
-                          fill-rule="evenodd"
-                          d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
-                          clip-rule="evenodd"
-                        />
+                  <div class="relative float-right inline-block text-left group">
+                    <div class="flex justify-center items-center group-hover:text-green-600 active">
+                      <button type="button" id="menu-button" aria-expanded="true" aria-haspopup="true">Destination</button>
+                      <svg class="-mr-1 h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                        <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
                       </svg>
                     </div>
-                    <div
-                      class="absolute right-0 pt-2 z-10 w-56 origin-top-right rounded-md scale-y-0 group-hover:scale-y-100 transition"
-                      role="menu"
-                      aria-orientation="vertical"
-                      aria-labelledby="menu-button"
-                      tabindex="-1"
-                    >
-                      <div
-                        class="py-1 bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
-                      >
-                        <a
-                          href="./../nature/"
-                          class="text-black block px-4 py-2 text-sm hover:bg-green-100 active"
-                          role="menuitem"
-                          tabindex="-1"
-                          id="menu-item-0"
-                        >
-                          Nature
-                        </a>
-                        <a
-                          href="./../cultural/"
-                          class="text-black block px-4 py-2 text-sm hover:bg-green-100"
-                          role="menuitem"
-                          tabindex="-1"
-                          id="menu-item-1"
-                        >
-                          Cultural
-                        </a>
-                        <a
-                          href="./../artificial/"
-                          class="text-black block px-4 py-2 text-sm hover:bg-green-100"
-                          role="menuitem"
-                          tabindex="-1"
-                          id="menu-item-2"
-                        >
-                          Artificial
-                        </a>
-                        <a
-                          href="./../conservancy/"
-                          class="text-black block px-4 py-2 text-sm hover:bg-green-100"
-                          role="menuitem"
-                          tabindex="-1"
-                          id="menu-item-2"
-                        >
-                          Conservancy
-                        </a>
+                    <div class="absolute right-0 pt-2 z-10 w-56 origin-top-right rounded-md scale-y-0 group-hover:scale-y-100 transition" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
+                      <div class="py-1 bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+                        <a href="./../nature/" class="text-black block px-4 py-2 text-sm hover:bg-green-100 active" role="menuitem" tabindex="-1" id="menu-item-0"> Nature </a>
+                        <a href="./../cultural/" class="text-black block px-4 py-2 text-sm hover:bg-green-100" role="menuitem" tabindex="-1" id="menu-item-1"> Cultural </a>
+                        <a href="./../artificial/" class="text-black block px-4 py-2 text-sm hover:bg-green-100" role="menuitem" tabindex="-1" id="menu-item-2"> Artificial </a>
+                        <a href="./../conservancy/" class="text-black block px-4 py-2 text-sm hover:bg-green-100" role="menuitem" tabindex="-1" id="menu-item-2"> Conservancy </a>
                       </div>
                     </div>
                   </div>
@@ -149,9 +64,7 @@
                   <a href="./../../culinary/" class="hover-navbar">Culinary</a>
                 </li>
                 <li class="nav-item">
-                  <a href="./../../travel-kit/" class="hover-navbar">
-                    Travel Kit
-                  </a>
+                  <a href="./../../travel-kit/" class="hover-navbar"> Travel Kit </a>
                 </li>
               </ul>
             </nav>
@@ -160,67 +73,30 @@
       </div>
     </header>
     <main>
-      <section
-        id="hero"
-        class="text-white bg-[url('./../../assets/img/destination/hero-nature.jpg')] min-h-screen bg-cover flex justify-center items-center flex-col"
-      >
+      <section id="hero" class="text-white bg-[url('./../../assets/img/destination/hero-nature.jpg')] h-screen bg-cover flex justify-center items-center flex-col relative">
         <div class="absolute bg-black/10 top-0 left-0 right-0 bottom-0"></div>
-        <h1
-          class="font-bold text-3xl md:text-5xl xl:text-7xl inline text-center"
-          id="title-hero"
-        >
-          Nature Destination
-        </h1>
-        <h3
-          class="font-semibold text-xl md:text-2xl xl:text-3xl text-center p-2"
-          id="subtitle-hero"
-        ></h3>
+        <h1 class="font-bold text-3xl md:text-5xl xl:text-7xl inline text-center" id="title-hero">Nature Destination</h1>
+        <h3 class="font-semibold text-xl md:text-2xl xl:text-3xl text-center p-2" id="subtitle-hero"></h3>
+        <div class="custom-shape-divider-bottom-1707913679 hidden md:block">
+          <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" class="hidden md:block" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
+            <path
+              d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
+              opacity=".5"
+              class="shape-fill"
+            ></path>
+            <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+          </svg>
+        </div>
+        <div class="custom-shape-divider-bottom-1707918856 md:hidden">
+          <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+          </svg>
+        </div>
+        <!-- <svg xmlns="http://www.w3.org/2000/svg" class="absolute left-0 bottom-0" viewBox="0 0 1440 320"><path fill="#000b76" fill-opacity="1" d="M0,288L120,250.7C240,213,480,139,720,138.7C960,139,1200,213,1320,250.7L1440,288L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"></path></svg> -->
       </section>
-      <div class="custom-shape-divider-bottom-1707913679 hidden md:block">
-        <svg
-          data-name="Layer 1"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 1200 120"
-          preserveAspectRatio="none"
-        >
-          <path
-            d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
-            opacity=".25"
-            class="shape-fill"
-          ></path>
-          <path
-            d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
-            opacity=".5"
-            class="shape-fill"
-          ></path>
-          <path
-            d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
-            class="shape-fill"
-          ></path>
-        </svg>
-      </div>
-      <div class="custom-shape-divider-bottom-1707918856 md:hidden">
-        <svg
-          data-name="Layer 1"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 1200 120"
-          preserveAspectRatio="none"
-        >
-          <path
-            d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
-            class="shape-fill"
-          ></path>
-        </svg>
-      </div>
-      <section
-        id="explore"
-        class="flex flex-col md:flex-row container mx-auto p-4 lg:p-8 gap-1 md:gap-6 lg:gap-8 items-center md:justify-center lg:justify-around"
-      >
-        <img
-          src="./../../assets/img/destination/explore-nature.png"
-          class="-translate-y-10 md:translate-y-0 w-[200px] md:w-[300px] lg:w-[350px] xl:w-[500px] h-auto mx-auto md:mx-0"
-          alt="Image Explore"
-        />
+      <section id="explore" class="flex flex-col md:flex-row container mx-auto p-4 lg:p-8 gap-1 md:gap-6 lg:gap-8 items-center md:justify-center lg:justify-around">
+        <img src="./../../assets/img/destination/explore-nature.png" class="-translate-y-10 md:translate-y-0 w-[200px] md:w-[300px] lg:w-[350px] xl:w-[500px] h-auto mx-auto md:mx-0" alt="Image Explore" />
         <div class="text-center md:text-left max-w-[600px]">
           <h5 class="text-primary font-semibold">Nature Destination</h5>
           <h1 class="font-bold text-4xl lg:text-5xl xl:text-6xl">
@@ -228,31 +104,21 @@
             <span class="text-primary">Natural Beauty</span>
             of East Java
           </h1>
-          <p class="mt-6 pb-6 md:text-lg">
-            Enjoy an adventure amidst the natural wonders of East Java, from
-            majestic volcanoes to stunning white sandy beaches. Discover the
-            mesmerizing beauty of nature and experience unforgettable peace
-            amidst breathtaking natural panoramas.
-          </p>
-          <a
-            href="#destination"
-            class="text-white bg-primary py-2 px-4 rounded-lg font-semibold"
-          >
-            Explore
-          </a>
+          <p class="mt-6 pb-6 md:text-lg">Enjoy an adventure amidst the natural wonders of East Java, from majestic volcanoes to stunning white sandy beaches. Discover the mesmerizing beauty of nature and experience unforgettable peace amidst breathtaking natural panoramas.</p>
+          <a href="#destination" class="text-white bg-primary py-2 px-4 rounded-lg font-semibold"> Explore </a>
         </div>
       </section>
     </main>
     <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
     <script src="./../../assets/js/destination.js"></script>
     <script>
-      window.addEventListener('load', function () {
-        new TypeIt('#subtitle-hero', {
+      window.addEventListener("load", function () {
+        new TypeIt("#subtitle-hero", {
           strings: "Let's choose where you want to go",
           speed: 75,
           startDelay: 400,
-        }).go()
-      })
+        }).go();
+      });
     </script>
   </body>
 </html>

@@ -14,7 +14,7 @@
     @apply bg-black;
 }
 
-.nav-active ~ nav ul li {
+.nav-active~nav ul li {
     @apply text-black;
 }
 
@@ -39,37 +39,39 @@
     @apply hover:text-green-600 transition relative;
 }
 
-.nav-active ~ nav ul {
+.nav-active~nav ul {
     @apply right-0;
 }
 
-.nav-active ~ nav ul li {
+.nav-active~nav ul li {
     @apply right-[40rem] animate-listItemShow;
 }
+
 .text-primary {
     @apply text-[#1D764A];
 }
+
 .bg-primary {
     @apply bg-[#1D764A];
 }
 
-.nav-active ~ nav ul li:nth-child(1) {
+.nav-active~nav ul li:nth-child(1) {
     animation-delay: 0ms;
 }
 
-.nav-active ~ nav ul li:nth-child(2) {
+.nav-active~nav ul li:nth-child(2) {
     animation-delay: 80ms;
 }
 
-.nav-active ~ nav ul li:nth-child(3) {
+.nav-active~nav ul li:nth-child(3) {
     animation-delay: 160ms;
 }
 
-.nav-active ~ nav ul li:nth-child(4) {
+.nav-active~nav ul li:nth-child(4) {
     animation-delay: 240ms;
 }
 
-.nav-active ~ nav ul li:nth-child(5) {
+.nav-active~nav ul li:nth-child(5) {
     animation-delay: 320ms;
 }
 
@@ -134,6 +136,7 @@ nav ul li .hover-navbar:hover::before {
 }
 
 @keyframes scale {
+
     0%,
     40%,
     100% {
@@ -164,9 +167,10 @@ nav ul li .hover-navbar:hover::before {
         @apply right-0;
     }
 }
+
 .custom-shape-divider-bottom-1707913679 {
     position: absolute;
-    bottom: 0;
+    bottom: -4px;
     left: 0;
     width: 100%;
     overflow: hidden;
@@ -184,30 +188,10 @@ nav ul li .hover-navbar:hover::before {
 .custom-shape-divider-bottom-1707913679 .shape-fill {
     fill: #f5f5f5;
 }
-.custom-shape-divider-bottom-1707918773 {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    transform: rotate(180deg);
-}
-
-.custom-shape-divider-bottom-1707918773 svg {
-    position: relative;
-    display: block;
-    width: calc(200% + 1.3px);
-    height: 210px;
-}
-
-.custom-shape-divider-bottom-1707918773 .shape-fill {
-    fill: #ffffff;
-}
 
 .custom-shape-divider-bottom-1707918856 {
     position: absolute;
-    bottom: 0;
+    bottom: -4px;
     left: 0;
     width: 100%;
     overflow: hidden;
