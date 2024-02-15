@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -46,7 +46,7 @@
                   <div class="relative float-right inline-block text-left group">
                     <div class="flex justify-center items-center group-hover:text-green-600 active">
                       <button type="button" id="menu-button" aria-expanded="true" aria-haspopup="true">Destination</button>
-                      <svg class="-mr-1 h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                      <svg class="-mr-1 h-6 w-6" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                         <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
                       </svg>
                     </div>
@@ -93,19 +93,58 @@
             <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
           </svg>
         </div>
-        <!-- <svg xmlns="http://www.w3.org/2000/svg" class="absolute left-0 bottom-0" viewBox="0 0 1440 320"><path fill="#000b76" fill-opacity="1" d="M0,288L120,250.7C240,213,480,139,720,138.7C960,139,1200,213,1320,250.7L1440,288L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"></path></svg> -->
       </section>
-      <section id="explore" class="flex flex-col md:flex-row container mx-auto p-4 lg:p-8 gap-1 md:gap-6 lg:gap-8 items-center md:justify-center lg:justify-around">
-        <img src="./../../assets/img/destination/explore-nature.png" class="-translate-y-10 md:translate-y-0 w-[200px] md:w-[300px] lg:w-[350px] xl:w-[500px] h-auto mx-auto md:mx-0" alt="Image Explore" />
-        <div class="text-center md:text-left max-w-[600px]">
-          <h5 class="text-primary font-semibold">Nature Destination</h5>
-          <h1 class="font-bold text-4xl lg:text-5xl xl:text-6xl">
-            Explore the
-            <span class="text-primary">Natural Beauty</span>
-            of East Java
-          </h1>
-          <p class="mt-6 pb-6 md:text-lg">Enjoy an adventure amidst the natural wonders of East Java, from majestic volcanoes to stunning white sandy beaches. Discover the mesmerizing beauty of nature and experience unforgettable peace amidst breathtaking natural panoramas.</p>
-          <a href="#destination" class="text-white bg-primary py-2 px-4 rounded-lg font-semibold"> Explore </a>
+      <section id="explore" class="relative">
+        <div class="flex flex-col md:flex-row container mx-auto p-4 lg:p-8 gap-1 md:gap-6 lg:gap-8 items-center md:justify-center lg:justify-around">
+          <img src="./../../assets/img/destination/explore-nature.png" class="-translate-y-10 md:translate-y-0 w-[200px] md:w-[280px] lg:w-[350px] xl:w-[400px] h-auto mx-auto md:mx-0" alt="Image Explore" />
+          <div class="text-center md:text-left max-w-[600px] z-10">
+            <h5 class="text-primary font-bold">Nature Destination</h5>
+            <h1 class="font-bold text-3xl lg:text-4xl xl:text-5xl">
+              Explore the
+              <span class="text-primary">Natural Beauty</span>
+              of East Java
+            </h1>
+            <p class="mt-4 pb-4 text-base lg:text-lg">Enjoy an adventure amidst the natural wonders of East Java, from majestic volcanoes to stunning white sandy beaches. Discover the mesmerizing beauty of nature and experience unforgettable peace amidst breathtaking natural panoramas.</p>
+            <a href="#popular-destination" class="text-white bg-primary py-3 px-8 rounded-lg font-semibold"> Explore </a>
+          </div>
+          <div class="absolute right-0 bottom-0 w-52 lg:w-60 h-auto z-0">
+            <img src="./../../assets/img/destination/bg-1.png" alt="Background Destination" />
+          </div>
+        </div>
+      </section>
+      <section id="popular-destination" class="min-h-screen container mx-auto p-2 md:p-8 lg:p-20 pt-16">
+        <div class="flex justify-center items-center flex-col">
+          <h2 class="font-bold text-3xl lg:text-4xl xl:text-5xl text-center">Most <span class="text-primary">Popular</span> Destination</h2>
+          <div class="bg-primary h-2 w-40 md:w-52 lg:w-60 mt-3 flex"></div>
+        </div>
+        <div class="mt-6 md:mt-10 lg:mt-12 p-4 flex flex-col gap-7 xl:gap-14">
+          <div class="flex flex-col items-center md:justify-center md:items-start md:flex-row gap-2 md:gap-2 lg:gap-12">
+            <div class="px-8 pb-0 flex-1">
+              <img src="./../../assets/img/destination/destination-nature-1b.jpg" class="rounded-md w-[400px] md:w-full h-auto" alt="Mount Bromo Image" />
+            </div>
+            <div class="px-8 pb-0 md:px-3 text-center md:text-left flex-1">
+              <h2 class="font-bold text-2xl lg:text-3xl xl:text-4xl">Mount Bromo</h2>
+              <p class="text-xs md:text-base lg:text-lg lg:mt-4">An unforgettable tourist icon of East Java, offering majestic natural panoramas and an immersive adventure experience. With majestic craters and vast deserts, enjoy the unique thrill of a jeep ride or watch the sunrise at Bukit Cinta for unforgettable moments.</p>
+            </div>
+          </div>
+          <div class="flex flex-col items-center md:justify-center md:items-start md:flex-row-reverse gap-2 md:gap-2 lg:gap-12">
+            <div class="px-8 pb-0 flex-1">
+              <img src="./../../assets/img/destination/destination-nature-2b.jpg" class="rounded-md w-[400px] md:w-full h-auto" alt="Ijen Crater Image" />
+            </div>
+            <div class="px-8 pb-0 md:px-3 text-center md:text-left flex-1">
+              <h2 class="font-bold text-2xl lg:text-3xl xl:text-4xl">Ijen Crater</h2>
+              <p class="text-xs md:text-base lg:text-lg lg:mt-4">Kawah Ijen is a stunning natural destination with its rare blue fire phenomenon and exotic scenery. When night falls, the dazzling Blue Fire emanates from the bottom of the crater, adding to its magical appeal.</p>
+            </div>
+          </div>
+          <div class="flex flex-col items-center md:justify-center md:items-start md:flex-row gap-2 md:gap-2 lg:gap-12">
+            <div class="px-8 pb-0 flex-1">
+              <img src="./../../assets/img/destination/destination-nature-3b.jpg" class="rounded-md w-[400px] md:w-full h-auto" alt="Tumpak Sewu Waterfall Image" />
+            </div>
+            <div class="px-8 pb-0 md:px-3 text-center md:text-left flex-1">
+              <h2 class="font-bold text-2xl lg:text-3xl xl:text-4xl">Tumpak Sewu Waterfall</h2>
+              <p class="text-xs md:text-base lg:text-lg lg:mt-4">Tumpak Sewu Waterfall amazes with its spectacular natural beauty. The clear water that falls from a height of about 120 meters, surrounded by lush green tropical vegetation, creates an enchanting and calming atmosphere for visitors.</p>
+            </div>
+          </div>
         </div>
       </section>
     </main>

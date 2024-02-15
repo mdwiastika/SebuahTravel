@@ -7,17 +7,12 @@
     <link rel="stylesheet" href="./assets/css/output.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
   </head>
 
   <body class="font-montserrat body-flex">
     <div class="bg-white fixed z-50 top-0 left-0 right-0 bottom-0" id="loading">
-      <div
-        class="loading absolute -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-      >
+      <div class="loading absolute -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
         <span></span>
         <span></span>
         <span></span>
@@ -25,42 +20,22 @@
         <span></span>
       </div>
     </div>
-    <header
-      class="fixed top-0 left-0 z-40 w-full text-white flex items-center transition-all duration-300 bg-transparent h-[80px] sm:h-[90px] md:h-[120px]"
-    >
+    <header class="fixed top-0 left-0 z-40 w-full text-white flex items-center transition-all duration-300 bg-transparent h-[80px] sm:h-[90px] md:h-[120px]">
       <div class="w-full relative">
-        <div
-          class="relative flex justify-between items-center py-2 md:px-20 px-6"
-        >
+        <div class="relative flex justify-between items-center py-2 md:px-20 px-6">
           <div class="flex pt-2">
             <a href="./">
-              <img
-                src="./assets/img/logo.png"
-                class="block w-auto h-[40px] md:h-[60px] md:w-auto lg:h-[70px] lg:w-auto"
-                alt="Logo East Java"
-                id="logo-east-java"
-              />
+              <img src="./assets/img/logo.png" class="block w-auto h-[40px] md:h-[60px] md:w-auto lg:h-[70px] lg:w-auto" alt="Logo East Java" id="logo-east-java" />
             </a>
           </div>
           <div class="flex items-center">
-            <button
-              class="absolute block right-5 nav-button z-50 px-8 group lg:hidden"
-              title="Navbar"
-            >
-              <span
-                class="nav-toggle transition duration-300 origin-top-left"
-              ></span>
+            <button class="absolute block right-5 nav-button z-50 px-8 group lg:hidden" title="Navbar">
+              <span class="nav-toggle transition duration-300 origin-top-left"></span>
               <span class="nav-toggle transition duration-300"></span>
-              <span
-                class="nav-toggle transition duration-300 origin-bottom-left"
-              ></span>
+              <span class="nav-toggle transition duration-300 origin-bottom-left"></span>
             </button>
-            <nav
-              class="absolute top-full left-0 w-full h-screen hidden bg-white lg:bg-transparent z-40 lg:static lg:block lg:w-full lg:h-full"
-            >
-              <ul
-                class="text-base font-semibold lg:flex lg:gap-7 relative lg:static right-[40rem] lg:items-center lg:justify-around z-40 lg:px-8 tracking-widest"
-              >
+            <nav class="absolute top-full left-0 w-full h-screen hidden bg-white lg:bg-transparent z-40 lg:static lg:block lg:w-full lg:h-full">
+              <ul class="text-base font-semibold lg:flex lg:gap-7 relative lg:static right-[40rem] lg:items-center lg:justify-around z-40 lg:px-8 tracking-widest">
                 <li class="nav-item">
                   <a href="./" class="hover-navbar active">Home</a>
                 </li>
@@ -68,79 +43,19 @@
                   <a href="./events" class="hover-navbar">Events</a>
                 </li>
                 <li class="nav-item">
-                  <div
-                    class="relative float-right inline-block text-left group"
-                  >
-                    <div
-                      class="flex justify-center items-center group-hover:text-green-600"
-                    >
-                      <button
-                        type="button"
-                        id="menu-button"
-                        aria-expanded="true"
-                        aria-haspopup="true"
-                      >
-                        Destination
-                      </button>
-                      <svg
-                        class="-mr-1 h-5 w-5"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
-                        aria-hidden="true"
-                      >
-                        <path
-                          fill-rule="evenodd"
-                          d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
-                          clip-rule="evenodd"
-                        />
+                  <div class="relative float-right inline-block text-left group">
+                    <div class="flex justify-center items-center group-hover:text-green-600">
+                      <button type="button" id="menu-button" aria-expanded="true" aria-haspopup="true">Destination</button>
+                      <svg class="-mr-1 h-6 w-6" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                        <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
                       </svg>
                     </div>
-                    <div
-                      class="absolute right-0 pt-2 z-10 w-56 origin-top-right rounded-md scale-y-0 group-hover:scale-y-100 transition"
-                      role="menu"
-                      aria-orientation="vertical"
-                      aria-labelledby="menu-button"
-                      tabindex="-1"
-                    >
-                      <div
-                        class="py-1 bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
-                      >
-                        <a
-                          href="./destination/nature"
-                          class="text-black block px-4 py-2 text-sm hover:bg-green-100"
-                          role="menuitem"
-                          tabindex="-1"
-                          id="menu-item-0"
-                        >
-                          Nature
-                        </a>
-                        <a
-                          href="./destination/cultural"
-                          class="text-black block px-4 py-2 text-sm hover:bg-green-100"
-                          role="menuitem"
-                          tabindex="-1"
-                          id="menu-item-1"
-                        >
-                          Cultural
-                        </a>
-                        <a
-                          href="./destination/artificial"
-                          class="text-black block px-4 py-2 text-sm hover:bg-green-100"
-                          role="menuitem"
-                          tabindex="-1"
-                          id="menu-item-2"
-                        >
-                          Artificial
-                        </a>
-                        <a
-                          href="./destination/conservancy"
-                          class="text-black block px-4 py-2 text-sm hover:bg-green-100"
-                          role="menuitem"
-                          tabindex="-1"
-                          id="menu-item-2"
-                        >
-                          Conservancy
-                        </a>
+                    <div class="absolute right-0 pt-2 z-10 w-56 origin-top-right rounded-md scale-y-0 group-hover:scale-y-100 transition" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
+                      <div class="py-1 bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+                        <a href="./destination/nature" class="text-black block px-4 py-2 text-sm hover:bg-green-100" role="menuitem" tabindex="-1" id="menu-item-0"> Nature </a>
+                        <a href="./destination/cultural" class="text-black block px-4 py-2 text-sm hover:bg-green-100" role="menuitem" tabindex="-1" id="menu-item-1"> Cultural </a>
+                        <a href="./destination/artificial" class="text-black block px-4 py-2 text-sm hover:bg-green-100" role="menuitem" tabindex="-1" id="menu-item-2"> Artificial </a>
+                        <a href="./destination/conservancy" class="text-black block px-4 py-2 text-sm hover:bg-green-100" role="menuitem" tabindex="-1" id="menu-item-2"> Conservancy </a>
                       </div>
                     </div>
                   </div>
@@ -159,72 +74,27 @@
     </header>
     <main>
       <section id="hero">
-        <video
-          autoplay
-          muted
-          loop
-          class="absolute top-0 left-0 w-full h-full object-cover object-center"
-        >
-          <source
-            src="./assets/video/final-video-home.webm"
-            type="video/webm"
-          />
+        <video autoplay muted loop class="absolute top-0 left-0 w-full h-full object-cover object-center">
+          <source src="./assets/video/final-video-home.webm" type="video/webm" />
         </video>
-        <div
-          class="flex justify-center items-center flex-col h-screen text-white"
-        >
-          <h2
-            class="font-bold text-3xl md:text-4xl xl:text-5xl mix-blend-overlay"
-          >
-            WELCOME TO
-          </h2>
-          <h1
-            class="font-extrabold text-5xl md:text-7xl xl:text-8xl mix-blend-overlay"
-          >
-            EAST JAVA
-          </h1>
-          <p
-            class="text-lg md:text-xl text-center mt-5 text-white z-10 max-w-[508px] p-2"
-          >
-            Embark on a journey like no other through pristine beaches, majestic
-            mountains, and vibrant cultural neritage
-          </p>
+        <div class="flex justify-center items-center flex-col h-screen text-white">
+          <h2 class="font-bold text-3xl md:text-4xl xl:text-5xl mix-blend-overlay">WELCOME TO</h2>
+          <h1 class="font-extrabold text-5xl md:text-7xl xl:text-8xl mix-blend-overlay">EAST JAVA</h1>
+          <p class="text-lg md:text-xl text-center mt-5 text-white z-10 max-w-[508px] p-2">Embark on a journey like no other through pristine beaches, majestic mountains, and vibrant cultural neritage</p>
         </div>
       </section>
-      <section
-        id="category"
-        class="min-h-[1000px] md:min-h-[800px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 relative -top-7 text-white"
-      >
+      <section id="category" class="min-h-[1000px] md:min-h-[800px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 relative -top-7 text-white">
         <div class="bg-[url('./../img/home/rect/rect-1.png')] bg-cover p-4">
           <h2 class="text-3xl font-bold mt-10">Flora & Fauna</h2>
-          <p>
-            East Java captivates with its diverse flora and fauna; from the
-            exotic forests of Mount Bromo to long-tailed macaques and wandering
-            deer in Baluran National Park, creating a charming and
-            biodiversity-rich environment.
-          </p>
+          <p>East Java captivates with its diverse flora and fauna; from the exotic forests of Mount Bromo to long-tailed macaques and wandering deer in Baluran National Park, creating a charming and biodiversity-rich environment.</p>
         </div>
-        <div
-          class="bg-[url('./../img/home/rect/rect-2.png')] bg-cover p-4 relative -top-10 md:-top-0"
-        >
+        <div class="bg-[url('./../img/home/rect/rect-2.png')] bg-cover p-4 relative -top-10 md:-top-0">
           <h2 class="text-3xl font-bold mt-10">Tradition</h2>
-          <p>
-            The traditions of East Java enchant with majestic traditional dances
-            like Reog Ponorogo, classical gamelan music, and local celebrations
-            reflecting cultural diversity, bringing to life the province's
-            ancient heritage and cultural beauty.
-          </p>
+          <p>The traditions of East Java enchant with majestic traditional dances like Reog Ponorogo, classical gamelan music, and local celebrations reflecting cultural diversity, bringing to life the province's ancient heritage and cultural beauty.</p>
         </div>
-        <div
-          class="bg-[url('./../img/home/rect/rect-3.png')] bg-cover p-4 relative -top-14 md:-top-0"
-        >
+        <div class="bg-[url('./../img/home/rect/rect-3.png')] bg-cover p-4 relative -top-14 md:-top-0">
           <h2 class="text-3xl font-bold mt-10">Geography</h2>
-          <p>
-            East Java, situated in the eastern part of Java Island, captivates
-            with its diverse geographical landscape, from majestic mountains in
-            Bromo Tengger Semeru National Park to exotic beaches like Malang
-            Beach.
-          </p>
+          <p>East Java, situated in the eastern part of Java Island, captivates with its diverse geographical landscape, from majestic mountains in Bromo Tengger Semeru National Park to exotic beaches like Malang Beach.</p>
         </div>
       </section>
       <section class="min-h-screen"></section>
