@@ -139,6 +139,19 @@ nav ul li .hover-navbar:hover::before {
     animation-delay: -0.5s;
 }
 
+.activity-item.activity-active .activity-content {
+    @apply h-[250px] scale-y-100;
+}
+
+.activity-item:not(.activity-active) .activity-content {
+    @apply h-0 scale-y-0;
+}
+
+
+.activity-item.activity-active .activity-icon {
+    @apply rotate-180;
+}
+
 @keyframes scale {
 
     0%,
