@@ -775,6 +775,22 @@ video {
   height: 1.5rem;
 }
 
+.h-\[50vh\] {
+  height: 50vh;
+}
+
+.h-\[75vh\] {
+  height: 75vh;
+}
+
+.h-20 {
+  height: 5rem;
+}
+
+.h-14 {
+  height: 3.5rem;
+}
+
 .min-h-\[1000px\] {
   min-height: 1000px;
 }
@@ -847,6 +863,14 @@ video {
   width: 700px;
 }
 
+.w-96 {
+  width: 24rem;
+}
+
+.w-14 {
+  width: 3.5rem;
+}
+
 .max-w-\[508px\] {
   max-width: 508px;
 }
@@ -873,6 +897,14 @@ video {
 
 .max-w-\[650px\] {
   max-width: 650px;
+}
+
+.max-w-96 {
+  max-width: 24rem;
+}
+
+.max-w-\[440px\] {
+  max-width: 440px;
 }
 
 .flex-1 {
@@ -963,6 +995,10 @@ video {
   gap: 2.5rem;
 }
 
+.gap-3 {
+  gap: 0.75rem;
+}
+
 .overflow-hidden {
   overflow: hidden;
 }
@@ -1006,6 +1042,11 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-\[\#FF5722\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 87 34 / var(--tw-bg-opacity));
+}
+
 .bg-\[url\(\'\.\/\.\.\/\.\.\/assets\/img\/destination\/hero-nature\.jpg\'\)\] {
   background-image: url('./../../assets/img/destination/hero-nature.jpg');
 }
@@ -1024,6 +1065,10 @@ video {
 
 .bg-cover {
   background-size: cover;
+}
+
+.fill-black {
+  fill: #000;
 }
 
 .object-cover {
@@ -1212,6 +1257,21 @@ video {
 
 .ring-opacity-5 {
   --tw-ring-opacity: 0.05;
+}
+
+.brightness-\[0\.8\] {
+  --tw-brightness: brightness(0.8);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.grayscale {
+  --tw-grayscale: grayscale(100%);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.saturate-50 {
+  --tw-saturate: saturate(.5);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
 .transition {
@@ -1561,6 +1621,10 @@ nav ul li .hover-navbar:hover::before {
 }
 
 @media (min-width: 768px) {
+  .md\:absolute {
+    position: absolute;
+  }
+
   .md\:-top-0 {
     top: -0px;
   }
@@ -1620,6 +1684,10 @@ nav ul li .hover-navbar:hover::before {
 
   .md\:w-full {
     width: 100%;
+  }
+
+  .md\:w-96 {
+    width: 24rem;
   }
 
   .md\:translate-y-0 {
@@ -1744,6 +1812,10 @@ nav ul li .hover-navbar:hover::before {
 
   .lg\:h-full {
     height: 100%;
+  }
+
+  .lg\:h-screen {
+    height: 100vh;
   }
 
   .lg\:w-60 {
