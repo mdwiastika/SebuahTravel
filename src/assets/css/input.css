@@ -155,22 +155,50 @@ nav ul li .hover-navbar:hover::before {
     @apply rounded-lg;
 }
 
-.splide__arrow {
+.splide-stories .splide__arrow {
     @apply bg-white;
 }
 
-.splide__arrow svg {
+.splide-stories .splide__arrow svg {
     @apply fill-[#1D764A];
 }
 
-.splide__slide:not(.is-active) {
+.splide-stories .splide__slide:not(.is-active) {
     @apply opacity-20;
 }
 
-.splide__arrow {
+.splide-stories .splide__arrow {
     @apply mt-[28%];
 }
 
+
+.splide-destination .splide__arrow {
+    @apply bg-white;
+}
+
+.splide-destination .splide__arrow svg {
+    @apply fill-[#1D764A];
+}
+
+.splide-destination .splide__arrow.splide__arrow--prev {
+    @apply lg:bg-white lg:opacity-100 lg:absolute lg:top-20 lg:right-[8.5rem] lg:w-14 lg:h-14 left-auto lg:border lg:border-solid lg:border-gray-900;
+}
+
+.splide-destination .splide__arrow.splide__arrow--prev svg {
+    @apply lg:fill-black;
+}
+
+.splide-destination .splide__arrow.splide__arrow--next {
+    @apply lg:bg-[#1D764A] lg:opacity-100 lg:absolute lg:top-20 lg:right-16 lg:w-14 lg:h-14;
+}
+
+.splide-destination .splide__arrow.splide__arrow--next svg {
+    @apply lg:fill-white;
+}
+
+.splide-destination {
+    @apply relative lg:static;
+}
 
 .activity-item.activity-active .activity-icon {
     @apply rotate-180;
