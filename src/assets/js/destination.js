@@ -2,11 +2,11 @@ window.addEventListener("load", function () {
   // nav 3 lines animation
   const nav_button = document.querySelector(".nav-button");
   const nav = document.querySelector("nav");
-  const loading = this.document.getElementById('loading');
+  const loading = this.document.getElementById("loading");
   const logo = this.document.getElementById("logo-east-java");
   setTimeout(() => {
-    loading.classList.add('hidden');
-  }, 500);
+    loading.classList.add("hidden");
+  }, 10);
   nav_button.addEventListener("click", function () {
     nav.classList.toggle("hidden");
     nav_button.classList.toggle("nav-active");

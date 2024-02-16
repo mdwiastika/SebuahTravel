@@ -140,11 +140,35 @@ nav ul li .hover-navbar:hover::before {
 }
 
 .activity-item.activity-active .activity-content {
-    @apply h-[250px] scale-y-100;
+    @apply h-[250px] md:h-[150px] lg:h-[100px] scale-y-100;
 }
 
 .activity-item:not(.activity-active) .activity-content {
     @apply h-0 scale-y-0;
+}
+
+.activity-item .activity-active .list-activity {
+    @apply rounded-t-lg;
+}
+
+.activity-item:not(.activity-active) .list-activity {
+    @apply rounded-lg;
+}
+
+.splide__arrow {
+    @apply bg-white;
+}
+
+.splide__arrow svg {
+    @apply fill-[#1D764A];
+}
+
+.splide__slide:not(.is-active) {
+    @apply opacity-20;
+}
+
+.splide__arrow {
+    @apply mt-[28%];
 }
 
 
