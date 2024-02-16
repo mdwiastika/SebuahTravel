@@ -48,11 +48,24 @@
 }
 
 .text-primary {
-    @apply text-[#1D764A];
+    /* @apply text-[#1D764A]; */
+    @apply bg-gradient-to-r from-[#1D764A] to-green-600 inline-block text-transparent bg-clip-text;
 }
 
 .bg-primary {
-    @apply bg-[#1D764A];
+    @apply bg-gradient-to-r from-[#1D764A] to-green-600;
+}
+
+.text-black-gradient {
+    @apply bg-gradient-to-r from-black to-slate-800 inline-block text-transparent bg-clip-text;
+}
+
+.bg-gradient-primary {
+    @apply bg-gradient-to-r from-[#1D764A] to-green-600;
+}
+
+.bg-gradient-primary-hover {
+    @apply hover:bg-gradient-to-r hover:from-[#29925d] hover:to-green-500;
 }
 
 .border-primary {
@@ -181,7 +194,7 @@ nav ul li .hover-navbar:hover::before {
 }
 
 .splide-destination .splide__arrow.splide__arrow--prev {
-    @apply lg:bg-white lg:opacity-100 lg:absolute lg:top-20 lg:right-[8.5rem] lg:w-14 lg:h-14 left-auto lg:border lg:border-solid lg:border-gray-900;
+    @apply lg:bg-white lg:opacity-100 lg:absolute lg:top-20 lg:right-[8.5rem] lg:w-14 lg:h-14 lg:left-auto lg:border lg:border-solid lg:border-gray-900;
 }
 
 .splide-destination .splide__arrow.splide__arrow--prev svg {
