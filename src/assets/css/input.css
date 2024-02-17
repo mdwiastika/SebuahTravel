@@ -48,7 +48,6 @@
 }
 
 .text-primary {
-    /* @apply text-[#1D764A]; */
     @apply bg-gradient-to-r from-[#1D764A] to-green-600 inline-block text-transparent bg-clip-text;
 }
 
