@@ -779,6 +779,14 @@ video {
   margin-top: 2rem;
 }
 
+.-mt-6 {
+  margin-top: -1.5rem;
+}
+
+.-mt-5 {
+  margin-top: -1.25rem;
+}
+
 .box-border {
   box-sizing: border-box;
 }
@@ -897,6 +905,10 @@ video {
 
 .h-\[300px\] {
   height: 300px;
+}
+
+.h-\[calc\(100dvh\)\] {
+  height: calc(100dvh);
 }
 
 .max-h-full {
@@ -1493,6 +1505,10 @@ video {
 
 .text-center {
   text-align: center;
+}
+
+.text-end {
+  text-align: end;
 }
 
 .font-montserrat {
@@ -2729,6 +2745,10 @@ nav ul li .hover-navbar:hover::before {
     margin-top: 1rem;
   }
 
+  .lg\:mt-0 {
+    margin-top: 0px;
+  }
+
   .lg\:block {
     display: block;
   }
@@ -2846,8 +2866,20 @@ nav ul li .hover-navbar:hover::before {
     flex-direction: row;
   }
 
+  .lg\:flex-row-reverse {
+    flex-direction: row-reverse;
+  }
+
+  .lg\:items-end {
+    align-items: flex-end;
+  }
+
   .lg\:items-center {
     align-items: center;
+  }
+
+  .lg\:justify-between {
+    justify-content: space-between;
   }
 
   .lg\:justify-around {
@@ -2933,6 +2965,10 @@ nav ul li .hover-navbar:hover::before {
     padding-top: 6rem;
   }
 
+  .lg\:text-end {
+    text-align: end;
+  }
+
   .lg\:text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem;
@@ -2986,6 +3022,10 @@ nav ul li .hover-navbar:hover::before {
 @media (min-width: 1280px) {
   .xl\:-mt-9 {
     margin-top: -2.25rem;
+  }
+
+  .xl\:-mt-10 {
+    margin-top: -2.5rem;
   }
 
   .xl\:h-\[750px\] {
