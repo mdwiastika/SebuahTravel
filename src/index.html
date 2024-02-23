@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   </head>
 
   <body class="font-montserrat body-flex">
@@ -349,7 +350,7 @@
           </div>
         </div>
       </section>
-      <section id="gallery" class="min-h-screen">
+      <section id="gallery">
         <div class="flex justify-center flex-col lg:flex-row items-center gap-2 lg:gap-4">
           <div class="hidden lg:block h-[6px] w-[200px] bg-gray-900"></div>
           <h2 class="text-3xl md:text-5xl lg:text-5xl xl:text-6xl font-bold text-center"><span class="text-primary leading-normal">Our Gallery</span></h2>
@@ -357,21 +358,72 @@
         </div>
         <p class="text-center text-sm md:text-base lg:text-lg xl:text-xl p-4">Discover for yourself your exciting East Java experience!</p>
 
-        <div class="slider-gallery relative h-full"></div>
+        <div class="slider-gallery carousel-3D-swiper-section">
+          <div class="carousel-3D-swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper" style="max-width: 1200px">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <div class="image-wrapper aspect-video">
+                  <img class="aspect-video" loading="lazy" src="./assets/img/home/slider-2/img-1.png" alt="" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="image-wrapper aspect-video">
+                  <img class="aspect-video" loading="lazy" src="./assets/img/home/slider-2/img-2.png" alt="" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="image-wrapper aspect-video">
+                  <img class="aspect-video" loading="lazy" src="./assets/img/home/slider-2/img-3.png" alt="" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="image-wrapper aspect-video">
+                  <img class="aspect-video" loading="lazy" src="./assets/img/home/slider-2/img-4.png" alt="" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="image-wrapper aspect-video">
+                  <img class="aspect-video" loading="lazy" src="./assets/img/home/slider-2/img-5.png" alt="" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="image-wrapper aspect-video">
+                  <img class="aspect-video" loading="lazy" src="./assets/img/home/slider-2/img-6.png" alt="" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="image-wrapper aspect-video">
+                  <img class="aspect-video" loading="lazy" src="./assets/img/home/slider-2/img-7.png" alt="" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="image-wrapper aspect-video">
+                  <img class="aspect-video" loading="lazy" src="./assets/img/home/slider-2/img-8.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <!-- pagination -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-pagination" style="bottom: -50px"></div>
+          </div>
+        </div>
       </section>
       <section id="testimonial" class="container mx-auto p-2 md:p-4 lg:p-6 xl:p-16">
         <h2 class="text-3xl md:text-5xl lg:text-5xl xl:text-6xl font-bold text-center lg:text-start">What They Say</h2>
         <div class="flex justify-center items-center flex-col lg:flex-row gap-4 lg:gap-6 mt-4 lg:items-start">
-          <div class="flex-1">
-            <iframe class="aspect-video w-full h-full rounded-lg" loading="lazy" src="https://www.youtube.com/embed/aKtb7Y3qOck?si=bd_5m92mrXuShDJn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <div class="flex-1 relative aspect-video rounded-lg overflow-hidden pt-[56.25%] lg:pt-0">
+            <iframe class="absolute top-0 left-0 right-0 bottom-0 w-full h-full border-0" loading="lazy" src="https://www.youtube.com/embed/aKtb7Y3qOck?si=bd_5m92mrXuShDJn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
           </div>
-          <div class="lg:flex-1 w-full h-full relative bg-green-50/20 p-3 lg:p-6 lg:aspect-video flex flex-col justify-between gap-4">
-            <!-- <img src="./assets/img/home/ballon-text.png" class="absolute top-0 left-0 bottom-0 right-0 w-auto h-auto" alt="" /> -->
-            <div class="">
-              <h2 class="font-semibold text-xl md:text-3xl xl:text-5xl text-blue-950">The Quiet Atmosphere Of East Java</h2>
+          <div class="lg:flex-1 w-full h-full relative bg-white lg:aspect-video flex flex-col justify-between gap-4 rounded-lg">
+            <img src="./assets/img/arrow-left.svg" class="absolute top-0 -left-[75px] bottom-0 w-32 h-32 z-50" alt="" />
+            <div class="relative p-3 lg:p-6">
+              <h2 class="font-semibold text-xl md:text-3xl xl:text-5xl text-blue-950 mb-4">The Quiet Atmosphere Of East Java</h2>
               <p>Well, I just love East Java so much, and we fell in love with the culture, people, the food. Everything was just amazing. I feel like in East Java, you can find serenity anywhere, literally. It's our favorite place that we've been to on our entire trip.</p>
             </div>
-            <div class="flex items-center gap-4">
+            <div class="flex items-center gap-4 p-3 lg:p-6">
               <img src="./assets/img/home/recommendation/img-3.png" class="rounded-full w-[35px] h-[35px]" alt="" />
               <h2 class="font-semibold text-lg">Budi Prakoso</h2>
             </div>
@@ -563,5 +615,29 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
     <script src="./assets/js/main.js"></script>
     <script src="./assets/js/slider.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      const carousel3Dswiper = new Swiper(".carousel-3D-swiper", {
+        loop: true,
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: 2,
+        coverflowEffect: {
+          rotate: 0,
+          stretch: 0,
+          depth: 350,
+          modifier: 1,
+          slideShadows: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+      });
+    </script>
   </body>
 </html>
