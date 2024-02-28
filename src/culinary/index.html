@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Rufina:wght@400;700&display=swap" rel="stylesheet" />
   </head>
 
   <body class="font-montserrat body-flex">
@@ -26,8 +27,8 @@
       <div class="w-full relative">
         <div class="relative flex justify-between items-center py-2 md:px-20 px-6">
           <div class="flex pt-2">
-            <a href="./../../">
-              <img loading="lazy" src="./../../assets/img/logo.png" class="block w-auto h-[40px] md:h-[60px] md:w-auto lg:h-[70px] lg:w-auto" alt="Logo East Java" id="logo-east-java" />
+            <a href="./../">
+              <img loading="lazy" src="./../assets/img/logo.png" class="block w-auto h-[40px] md:h-[60px] md:w-auto lg:h-[70px] lg:w-auto" alt="Logo East Java" id="logo-east-java" />
             </a>
           </div>
           <div class="flex items-center">
@@ -39,10 +40,10 @@
             <nav class="absolute top-full left-0 w-full h-screen hidden bg-white lg:bg-transparent z-40 lg:static lg:block lg:w-full lg:h-full">
               <ul class="text-base font-semibold lg:flex lg:gap-7 relative lg:static right-[40rem] lg:items-center lg:justify-around z-40 lg:px-8 tracking-widest">
                 <li class="nav-item">
-                  <a href="./../../" class="hover-navbar">Home</a>
+                  <a href="./../" class="hover-navbar">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a href="./events/" class="hover-navbar">Events</a>
+                  <a href="./../events/" class="hover-navbar">Events</a>
                 </li>
                 <li class="nav-item">
                   <div class="relative float-right inline-block text-left group">
@@ -54,19 +55,19 @@
                     </div>
                     <div class="absolute right-0 pt-2 z-10 w-56 origin-top-right rounded-md scale-y-0 group-hover:scale-y-100 transition" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
                       <div class="py-1 bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
-                        <a href="./../nature/" class="text-black block px-4 py-2 text-sm hover:bg-green-100" role="menuitem" tabindex="-1" id="menu-item-0"> Nature </a>
-                        <a href="./../cultural/" class="text-black block px-4 py-2 text-sm hover:bg-green-100" role="menuitem" tabindex="-1" id="menu-item-1"> Cultural </a>
-                        <a href="./../artificial/" class="text-black block px-4 py-2 text-sm hover:bg-green-100" role="menuitem" tabindex="-1" id="menu-item-2"> Artificial </a>
-                        <a href="./../conservancy/" class="text-black block px-4 py-2 text-sm hover:bg-green-100" role="menuitem" tabindex="-1" id="menu-item-2"> Conservancy </a>
+                        <a href="./../destination/nature/" class="text-black block px-4 py-2 text-sm hover:bg-green-100" role="menuitem" tabindex="-1" id="menu-item-0"> Nature </a>
+                        <a href="./../destination/cultural/" class="text-black block px-4 py-2 text-sm hover:bg-green-100" role="menuitem" tabindex="-1" id="menu-item-1"> Cultural </a>
+                        <a href="./../destination/artificial/" class="text-black block px-4 py-2 text-sm hover:bg-green-100" role="menuitem" tabindex="-1" id="menu-item-2"> Artificial </a>
+                        <a href="./../destination/conservancy/" class="text-black block px-4 py-2 text-sm hover:bg-green-100" role="menuitem" tabindex="-1" id="menu-item-2"> Conservancy </a>
                       </div>
                     </div>
                   </div>
                 </li>
                 <li class="nav-item">
-                  <a href="./../../culinary/" class="hover-navbar active">Culinary</a>
+                  <a href="./../culinary/" class="hover-navbar active">Culinary</a>
                 </li>
                 <li class="nav-item">
-                  <a href="./../../travel-kit/" class="hover-navbar"> Travel Kit </a>
+                  <a href="./../travel-kit/" class="hover-navbar"> Travel Kit </a>
                 </li>
               </ul>
             </nav>
@@ -75,484 +76,17 @@
       </div>
     </header>
     <main>
-      <section id="hero" class="text-white bg-[url('./../../assets/img/destination/hero-nature.jpg')] h-[75vh] lg:h-screen bg-cover flex justify-center items-center flex-col relative">
-        <div class="absolute bg-black/10 top-0 left-0 right-0 bottom-0"></div>
-        <h1 class="font-bold text-3xl md:text-5xl xl:text-7xl inline text-center" id="title-hero">Nature Destination</h1>
-        <h3 class="font-semibold text-xl md:text-2xl xl:text-3xl text-center p-2" id="subtitle-hero"></h3>
-        <div class="custom-shape-divider-bottom-1707913679 hidden md:block">
-          <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" class="hidden md:block" viewBox="0 0 1200 120" preserveAspectRatio="none">
-            <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
-            <path
-              d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
-              opacity=".5"
-              class="shape-fill"
-            ></path>
-            <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
-          </svg>
-        </div>
-        <div class="custom-shape-divider-bottom-1707918856 md:hidden">
-          <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-            <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
-          </svg>
-        </div>
-      </section>
-      <section id="explore" class="relative">
-        <div class="flex flex-col md:flex-row container mx-auto p-4 lg:px-0 lg:p-8 gap-1 md:gap-6 lg:gap-8 items-center md:justify-center lg:justify-around">
-          <img loading="lazy" src="./../../assets/img/destination/explore-nature.png" class="-translate-y-10 md:translate-y-0 w-[200px] md:w-[280px] lg:w-[350px] xl:w-[400px] h-auto mx-auto md:mx-0" alt="Image Explore" />
-          <div class="text-center md:text-left max-w-[600px] z-10">
-            <h5 class="text-primary font-bold">Nature Destination</h5>
-            <h1 class="font-bold text-3xl lg:text-4xl xl:text-5xl text-black-gradient">
-              Explore the
-              <span class="text-primary">Natural Beauty</span>
-              of East Java
-            </h1>
-            <p class="mt-4 pb-4 text-base lg:text-lg">Enjoy an adventure amidst the natural wonders of East Java, from majestic volcanoes to stunning white sandy beaches. Discover the mesmerizing beauty of nature and experience unforgettable peace amidst breathtaking natural panoramas.</p>
-            <a href="#popular-destination" class="text-white bg-primary py-3 px-8 rounded-lg font-semibold bg-gradient-primary bg-gradient-primary-hover transition"> Explore </a>
+      <section id="hero" class="text-white bg-[#263A29] h-screen lg:h-screen bg-cover flex justify-center items-center flex-col lg:flex-row relative gap-4">
+        <div class="p-3 lg:pl-10 md:p-5 flex flex-col justify-between relative">
+          <div class="z-10 font-rufina">
+            <h1 class="font-semibold text-3xl md:text-5xl xl:text-7xl max-w-[90%] lg:max-w-[70%]" id="title-hero">Typical East Javanese culinary delights</h1>
+            <h3 class="font-medium text-sm md:text-xl xl:text-2xl p-2 px-0 mt-0 md:mt-4 max-w-[70%] lg:max-w-[50%]" id="subtitle-hero">Explore the unique and authentic culinary delights of East Java here!</h3>
           </div>
-          <div class="absolute right-0 bottom-0 w-52 lg:w-60 h-auto z-0">
-            <img loading="lazy" src="./../../assets/img/destination/bg-1.png" alt="Background Destination" />
-          </div>
-        </div>
-      </section>
-      <section id="popular-destination" class="p-2 pt-16 md:p-8 md:pt-24 md:-mt-8 lg:p-12 lg:pt-24 lg:-mt-8 relative">
-        <div class="hidden md:block md:absolute top-1/2 left-0 w-96">
-          <img loading="lazy" src="./../../assets/img/destination/bg-2.png" alt="Background Destination" />
-        </div>
-        <div class="container mx-auto flex justify-center items-center flex-col">
-          <h2 class="font-bold text-3xl lg:text-4xl xl:text-5xl text-center text-black-gradient">Most <span class="text-primary">Popular</span> Destination</h2>
-          <div class="bg-primary h-2 w-40 md:w-52 lg:w-60 mt-3 flex"></div>
-        </div>
-        <div class="mt-6 md:mt-10 lg:mt-12 p-4 lg:px-0 flex flex-col gap-7 xl:gap-14 container mx-auto">
-          <div class="flex flex-col items-center md:justify-center md:items-start md:flex-row gap-2 md:gap-2 lg:gap-12">
-            <div class="pb-0 flex-1">
-              <img loading="lazy" src="./../../assets/img/destination/destination-nature-1b.jpg" class="rounded-md w-[400px] md:w-full h-auto" alt="Mount Bromo Image" />
-            </div>
-            <div class="pb-0 text-center md:text-left flex-1">
-              <h2 class="font-bold text-2xl lg:text-3xl xl:text-4xl">Mount Bromo</h2>
-              <p class="text-sm md:text-base lg:text-lg lg:mt-4">An unforgettable tourist icon of East Java, offering majestic natural panoramas and an immersive adventure experience. With majestic craters and vast deserts, enjoy the unique thrill of a jeep ride or watch the sunrise at Bukit Cinta for unforgettable moments.</p>
-            </div>
-          </div>
-          <div class="flex flex-col items-center md:justify-center md:items-start md:flex-row-reverse gap-2 md:gap-2 lg:gap-12">
-            <div class="pb-0 flex-1">
-              <img loading="lazy" src="./../../assets/img/destination/destination-nature-2b.jpg" class="rounded-md w-[400px] md:w-full h-auto" alt="Ijen Crater Image" />
-            </div>
-            <div class="pb-0 text-center md:text-left flex-1">
-              <h2 class="font-bold text-2xl lg:text-3xl xl:text-4xl">Ijen Crater</h2>
-              <p class="text-sm md:text-base lg:text-lg lg:mt-4">Kawah Ijen is a stunning natural destination with its rare blue fire phenomenon and exotic scenery. When night falls, the dazzling Blue Fire emanates from the bottom of the crater, adding to its magical appeal.</p>
-            </div>
-          </div>
-          <div class="flex flex-col items-center md:justify-center md:items-start md:flex-row gap-2 md:gap-2 lg:gap-12">
-            <div class="pb-0 flex-1">
-              <img loading="lazy" src="./../../assets/img/destination/destination-nature-3b.jpg" class="rounded-md w-[400px] md:w-full h-auto" alt="Tumpak Sewu Waterfall Image" />
-            </div>
-            <div class="pb-0 text-center md:text-left flex-1">
-              <h2 class="font-bold text-2xl lg:text-3xl xl:text-4xl">Tumpak Sewu Waterfall</h2>
-              <p class="text-sm md:text-base lg:text-lg lg:mt-4">Tumpak Sewu Waterfall amazes with its spectacular natural beauty. The clear water that falls from a height of about 120 meters, surrounded by lush green tropical vegetation, creates an enchanting and calming atmosphere for visitors.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section id="activity">
-        <div class="container mx-auto p-2 pt-10 md:p-8 lg:p-12 relative z-10">
-          <div class="title text-center">
-            <h2 class="font-bold text-3xl lg:text-4xl xl:text-5xl max-w-[600px] mx-auto"><span class="text-primary">Best Activities</span> For You to <span class="text-primary">Experience</span></h2>
-            <p class="max-w-[500px] mx-auto mt-4">Enjoy enchanting natural wonders and immersive adventures amidst breathtaking natural beauty.</p>
-          </div>
-          <div class="activity flex flex-col mt-6 gap-2" id="accordion-activity">
-            <div class="activity-item">
-              <div class="bg-white cursor-pointer p-3 px-5 flex items-center justify-between gap-3 list-activity">
-                <div class="flex gap-3 items-center">
-                  <div class="bg-[#FF5722] inline-block p-1 md:p-2 lg:p-3 rounded-md">
-                    <img loading="lazy" src="./../../assets/img/destination/icon-mountain.svg" class="w-6 md:w-8 h-auto" alt="icon mountain" />
-                  </div>
-                  <div class="text-base lg:text-xl font-semibold">Mountain Climbing</div>
-                </div>
-                <div class="">
-                  <svg class="-mr-1 h-6 w-6 transition activity-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                    <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
-                  </svg>
-                </div>
-              </div>
-              <div class="rounded-b-lg bg-white px-5 text-sm activity-content transition-all origin-top">
-                Mountain climbing activities are an unforgettable experience in natural tourist destinations such as Mount Bromo, Mount Semeru and Kawah Ijen. Climbing mountains not only provides a physical challenge, but also offers stunning natural views. From the top of the mountain, visitors can enjoy a wide panorama, especially at sunrise or sunset. These mountains are also often a
-                destination for photographers to capture spectacular natural beauty.
-              </div>
-            </div>
-            <div class="activity-item">
-              <div class="bg-white cursor-pointer p-3 px-5 flex items-center justify-between gap-3 list-activity">
-                <div class="flex gap-3 items-center">
-                  <div class="bg-[#FACD49] inline-block p-1 md:p-2 lg:p-3 rounded-md">
-                    <img loading="lazy" src="./../../assets/img/destination/icon-waterfall.svg" class="w-6 md:w-8 h-auto" alt="icon mountain" />
-                  </div>
-                  <div class="text-base lg:text-xl font-semibold">Enjoying the Waterfall</div>
-                </div>
-                <div class="">
-                  <svg class="-mr-1 h-6 w-6 transition activity-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                    <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
-                  </svg>
-                </div>
-              </div>
-              <div class="rounded-b-lg bg-white px-5 text-sm activity-content transition-all origin-top">
-                Mountain climbing activities are an unforgettable experience in natural tourist destinations such as Mount Bromo, Mount Semeru and Kawah Ijen. Climbing mountains not only provides a physical challenge, but also offers stunning natural views. From the top of the mountain, visitors can enjoy a wide panorama, especially at sunrise or sunset. These mountains are also often a
-                destination for photographers to capture spectacular natural beauty.
-              </div>
-            </div>
-            <div class="activity-item">
-              <div class="bg-white cursor-pointer p-3 px-5 flex items-center justify-between gap-3 list-activity">
-                <div class="flex gap-3 items-center">
-                  <div class="bg-[#F85E9F] inline-block p-1 md:p-2 lg:p-3 rounded-md">
-                    <img loading="lazy" src="./../../assets/img/destination/icon-cycle.svg" class="w-6 md:w-8 h-auto" alt="icon mountain" />
-                  </div>
-                  <div class="text-base lg:text-xl font-semibold">Cycling in Nature</div>
-                </div>
-                <div class="">
-                  <svg class="-mr-1 h-6 w-6 transition activity-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                    <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
-                  </svg>
-                </div>
-              </div>
-              <div class="rounded-b-lg bg-white px-5 text-sm activity-content transition-all origin-top">
-                Mountain climbing activities are an unforgettable experience in natural tourist destinations such as Mount Bromo, Mount Semeru and Kawah Ijen. Climbing mountains not only provides a physical challenge, but also offers stunning natural views. From the top of the mountain, visitors can enjoy a wide panorama, especially at sunrise or sunset. These mountains are also often a
-                destination for photographers to capture spectacular natural beauty.
-              </div>
-            </div>
-            <div class="activity-item">
-              <div class="bg-white cursor-pointer p-3 px-5 flex items-center justify-between gap-3 list-activity">
-                <div class="flex gap-3 items-center">
-                  <div class="bg-[#5D50C6] inline-block p-1 md:p-2 lg:p-3 rounded-md">
-                    <img loading="lazy" src="./../../assets/img/destination/icon-beach.svg" class="w-6 md:w-8 h-auto" alt="icon mountain" />
-                  </div>
-                  <div class="text-base lg:text-xl font-semibold">Playing on the Beach</div>
-                </div>
-                <div class="">
-                  <svg class="-mr-1 h-6 w-6 transition activity-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                    <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
-                  </svg>
-                </div>
-              </div>
-              <div class="rounded-b-lg bg-white px-5 text-sm activity-content transition-all origin-top">
-                Mountain climbing activities are an unforgettable experience in natural tourist destinations such as Mount Bromo, Mount Semeru and Kawah Ijen. Climbing mountains not only provides a physical challenge, but also offers stunning natural views. From the top of the mountain, visitors can enjoy a wide panorama, especially at sunrise or sunset. These mountains are also often a
-                destination for photographers to capture spectacular natural beauty.
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section id="stories" class="p-2 pt-10 md:p-8 lg:p-12 container mx-auto">
-        <div class="text-center">
-          <h2 class="font-bold text-3xl lg:text-4xl xl:text-5xl text-black-gradient">Adventure <span class="text-primary">Stories</span></h2>
-        </div>
-        <div class="slider-video flex justify-center pt-6">
-          <section class="splide splide-stories relative w-full overflow-hidden pt-[56.25%] -mt-[56.25%]" aria-label="Splide Basic HTML Example">
-            <div class="splide__track">
-              <ul class="splide__list">
-                <li class="splide__slide">
-                  <iframe class="absolute top-0 left-0 bottom-0 right-0 w-full h-full rounded-lg" loading="lazy" src="https://www.youtube.com/embed/aKtb7Y3qOck?si=bd_5m92mrXuShDJn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                </li>
-                <li class="splide__slide">
-                  <iframe class="absolute top-0 left-0 bottom-0 right-0 w-full h-full rounded-lg" loading="lazy" src="https://www.youtube.com/embed/Xg-oErzBndA?si=zVNEAj3oFLxuidF9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                </li>
-                <li class="splide__slide">
-                  <iframe class="absolute top-0 left-0 bottom-0 right-0 w-full h-full rounded-lg" loading="lazy" src="https://www.youtube.com/embed/vW-iehXINfc?si=c736HQcqbwGFntMN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                </li>
-                <li class="splide__slide">
-                  <iframe class="absolute top-0 left-0 bottom-0 right-0 w-full h-full rounded-lg" loading="lazy" src="https://www.youtube.com/embed/Fa_rNR__UV0?si=cFPaF5QnCx_ekRS6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                </li>
-                <li class="splide__slide">
-                  <iframe class="absolute top-0 left-0 bottom-0 right-0 w-full h-full rounded-lg" loading="lazy" src="https://www.youtube.com/embed/aaFNTpG8qyU?si=ddOjG5PlvzJ1jebt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                </li>
-              </ul>
-            </div>
-          </section>
-        </div>
-      </section>
-      <section id="more-destination">
-        <div class="container mx-auto p-2 pt-11 md:p-8 lg:p-12 pb-0 relative">
-          <div class="title text-center md:text-start">
-            <h2 class="font-bold text-xl md:text-2xl lg:text-3xl">More Destinations</h2>
-            <p class="uppercase text-primary font-bold text-base md:text-lg">find your favorite destination</p>
-          </div>
-          <section class="splide splide-destination mt-4 mb-6 lg:mb-0" aria-label="Splide Basic HTML Example">
-            <div class="splide__track">
-              <ul class="splide__list">
-                <li class="splide__slide">
-                  <div class="img_box flex justify-center relative cursor-pointer rounded-lg overflow-hidden" data-modal-target="slider-1-modal" data-modal-toggle="slider-1-modal">
-                    <div class="absolute left-4 bottom-4 bg-white/30 backdrop-blur-md p-5 rounded-md">
-                      <h3 class="text-lg font-semibold text-black">Sempu Island</h3>
-                      <p class="text-base text-gray-900 font-medium">Jember</p>
-                    </div>
-                    <img src="./../../assets/img/destination/slider-1.png" loading="lazy" class="rounded-lg w-full h-auto overflow-hidden p-[1px] hover:scale-[1.05] transition" alt="" />
-                  </div>
-                </li>
-                <li class="splide__slide">
-                  <div class="img_box flex justify-center relative cursor-pointer rounded-lg overflow-hidden" data-modal-target="slider-2-modal" data-modal-toggle="slider-2-modal">
-                    <div class="absolute left-4 bottom-4 bg-white/30 backdrop-blur-md p-5 rounded-md">
-                      <h3 class="text-lg font-semibold text-black">Sempu Island</h3>
-                      <p class="text-base text-gray-900 font-medium">Jember</p>
-                    </div>
-                    <img src="./../../assets/img/destination/slider-2.png" loading="lazy" class="rounded-lg w-full h-auto overflow-hidden p-[1px] hover:scale-[1.05] transition" alt="" />
-                  </div>
-                </li>
-                <li class="splide__slide">
-                  <div class="img_box flex justify-center relative cursor-pointer rounded-lg overflow-hidden" data-modal-target="slider-3-modal" data-modal-toggle="slider-3-modal">
-                    <div class="absolute left-4 bottom-4 bg-white/30 backdrop-blur-md p-5 rounded-md">
-                      <h3 class="text-lg font-semibold text-black">Sempu Island</h3>
-                      <p class="text-base text-gray-900 font-medium">Jember</p>
-                    </div>
-                    <img src="./../../assets/img/destination/slider-3.png" loading="lazy" class="rounded-lg w-full h-auto overflow-hidden p-[1px] hover:scale-[1.05] transition" alt="" />
-                  </div>
-                </li>
-                <li class="splide__slide">
-                  <div class="img_box flex justify-center relative cursor-pointer rounded-lg overflow-hidden" data-modal-target="slider-4-modal" data-modal-toggle="slider-4-modal">
-                    <div class="absolute left-4 bottom-4 bg-white/30 backdrop-blur-md p-5 rounded-md">
-                      <h3 class="text-lg font-semibold text-black">Sempu Island</h3>
-                      <p class="text-base text-gray-900 font-medium">Jember</p>
-                    </div>
-                    <img src="./../../assets/img/destination/slider-4.png" loading="lazy" class="rounded-lg w-full h-auto overflow-hidden p-[1px] hover:scale-[1.05] transition" alt="" />
-                  </div>
-                </li>
-                <li class="splide__slide">
-                  <div class="img_box flex justify-center relative cursor-pointer rounded-lg overflow-hidden" data-modal-target="slider-5-modal" data-modal-toggle="slider-5-modal">
-                    <div class="absolute left-4 bottom-4 bg-white/30 backdrop-blur-md p-5 rounded-md">
-                      <h3 class="text-lg font-semibold text-black">Sempu Island</h3>
-                      <p class="text-base text-gray-900 font-medium">Jember</p>
-                    </div>
-                    <img src="./../../assets/img/destination/slider-5.png" loading="lazy" class="rounded-lg w-full h-auto overflow-hidden p-[1px] hover:scale-[1.05] transition" alt="" />
-                  </div>
-                </li>
-                <li class="splide__slide">
-                  <div class="img_box flex justify-center relative cursor-pointer rounded-lg overflow-hidden" data-modal-target="slider-6-modal" data-modal-toggle="slider-6-modal">
-                    <div class="absolute left-4 bottom-4 bg-white/30 backdrop-blur-md p-5 rounded-md">
-                      <h3 class="text-lg font-semibold text-black">Sempu Island</h3>
-                      <p class="text-base text-gray-900 font-medium">Jember</p>
-                    </div>
-                    <img src="./../../assets/img/destination/slider-6.png" loading="lazy" class="rounded-lg w-full h-auto overflow-hidden p-[1px] hover:scale-[1.05] transition" alt="" />
-                  </div>
-                </li>
-                <li class="splide__slide">
-                  <div class="img_box flex justify-center relative cursor-pointer rounded-lg overflow-hidden" data-modal-target="slider-7-modal" data-modal-toggle="slider-7-modal">
-                    <div class="absolute left-4 bottom-4 bg-white/30 backdrop-blur-md p-5 rounded-md">
-                      <h3 class="text-lg font-semibold text-black">Sempu Island</h3>
-                      <p class="text-base text-gray-900 font-medium">Jember</p>
-                    </div>
-                    <img src="./../../assets/img/destination/slider-7.png" loading="lazy" class="rounded-lg w-full h-auto overflow-hidden p-[1px] hover:scale-[1.05] transition" alt="" />
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </section>
-        </div>
-      </section>
-      <section>
-        <!-- Main modal -->
-        <div id="slider-1-modal" tabindex="-1" class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
-          <div class="relative w-full max-w-5xl max-h-full">
-            <!-- Modal content -->
-            <div class="relative bg-white rounded-lg shadow">
-              <!-- Modal header -->
-              <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t">
-                <h3 class="text-xl font-medium text-gray-900">Sempu Island</h3>
-                <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center" data-modal-hide="slider-1-modal">
-                  <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
-                  </svg>
-                  <span class="sr-only">Close modal</span>
-                </button>
-              </div>
-              <!-- Modal body -->
-              <div class="p-4 md:p-5 space-y-4 flex flex-col lg:flex-row gap-5 lg:gap-6">
-                <img loading="lazy" src="./../../assets/img/destination/slider-1.png" class="rounded-lg h-[300px] md:h-[450px] lg:flex-1 lg:h-auto lg:w-auto lg:object-cover" alt="Sempu Island" />
-                <div class="">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt rerum facere harum dignissimos neque fuga reiciendis unde debitis eos doloribus itaque consequatur cumque minus eum ad quisquam veniam, fugiat placeat quis et alias consectetur voluptate. Voluptatibus repudiandae, aliquid eum, nobis laborum culpa cupiditate voluptas sint dignissimos pariatur nam id odio,
-                  consequuntur necessitatibus! Deserunt nam, deleniti distinctio consectetur sapiente, cumque quisquam laboriosam, reiciendis soluta nihil a eum odio doloribus? Temporibus quia velit rerum laborum harum veritatis! Reprehenderit assumenda quam repellat, vero ipsum perferendis aut exercitationem facilis aperiam tenetur dignissimos veritatis quidem inventore sit iure dolores, aliquam
-                  quod blanditiis voluptas quis. Facere!
-                </div>
-              </div>
-              <!-- Modal footer -->
-            </div>
-          </div>
-        </div>
-        <div id="slider-2-modal" tabindex="-1" class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
-          <div class="relative w-full max-w-5xl max-h-full">
-            <!-- Modal content -->
-            <div class="relative bg-white rounded-lg shadow">
-              <!-- Modal header -->
-              <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t">
-                <h3 class="text-xl font-medium text-gray-900">Sempu Island</h3>
-                <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center" data-modal-hide="slider-2-modal">
-                  <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
-                  </svg>
-                  <span class="sr-only">Close modal</span>
-                </button>
-              </div>
-              <!-- Modal body -->
-              <div class="p-4 md:p-5 space-y-4 flex flex-col lg:flex-row gap-5 lg:gap-6">
-                <img loading="lazy" src="./../../assets/img/destination/slider-2.png" class="rounded-lg h-[300px] md:h-[450px] lg:flex-1 lg:h-auto lg:w-auto lg:object-cover" alt="Sempu Island" />
-                <div class="">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt rerum facere harum dignissimos neque fuga reiciendis unde debitis eos doloribus itaque consequatur cumque minus eum ad quisquam veniam, fugiat placeat quis et alias consectetur voluptate. Voluptatibus repudiandae, aliquid eum, nobis laborum culpa cupiditate voluptas sint dignissimos pariatur nam id odio,
-                  consequuntur necessitatibus! Deserunt nam, deleniti distinctio consectetur sapiente, cumque quisquam laboriosam, reiciendis soluta nihil a eum odio doloribus? Temporibus quia velit rerum laborum harum veritatis! Reprehenderit assumenda quam repellat, vero ipsum perferendis aut exercitationem facilis aperiam tenetur dignissimos veritatis quidem inventore sit iure dolores, aliquam
-                  quod blanditiis voluptas quis. Facere!
-                </div>
-              </div>
-              <!-- Modal footer -->
-            </div>
-          </div>
-        </div>
-        <div id="slider-3-modal" tabindex="-1" class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
-          <div class="relative w-full max-w-5xl max-h-full">
-            <!-- Modal content -->
-            <div class="relative bg-white rounded-lg shadow">
-              <!-- Modal header -->
-              <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t">
-                <h3 class="text-xl font-medium text-gray-900">Sempu Island</h3>
-                <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center" data-modal-hide="slider-3-modal">
-                  <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
-                  </svg>
-                  <span class="sr-only">Close modal</span>
-                </button>
-              </div>
-              <!-- Modal body -->
-              <div class="p-4 md:p-5 space-y-4 flex flex-col lg:flex-row gap-5 lg:gap-6">
-                <img loading="lazy" src="./../../assets/img/destination/slider-3.png" class="rounded-lg h-[300px] md:h-[450px] lg:flex-1 lg:h-auto lg:w-auto lg:object-cover" alt="Sempu Island" />
-                <div class="">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt rerum facere harum dignissimos neque fuga reiciendis unde debitis eos doloribus itaque consequatur cumque minus eum ad quisquam veniam, fugiat placeat quis et alias consectetur voluptate. Voluptatibus repudiandae, aliquid eum, nobis laborum culpa cupiditate voluptas sint dignissimos pariatur nam id odio,
-                  consequuntur necessitatibus! Deserunt nam, deleniti distinctio consectetur sapiente, cumque quisquam laboriosam, reiciendis soluta nihil a eum odio doloribus? Temporibus quia velit rerum laborum harum veritatis! Reprehenderit assumenda quam repellat, vero ipsum perferendis aut exercitationem facilis aperiam tenetur dignissimos veritatis quidem inventore sit iure dolores, aliquam
-                  quod blanditiis voluptas quis. Facere!
-                </div>
-              </div>
-              <!-- Modal footer -->
-            </div>
-          </div>
-        </div>
-        <div id="slider-4-modal" tabindex="-1" class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
-          <div class="relative w-full max-w-5xl max-h-full">
-            <!-- Modal content -->
-            <div class="relative bg-white rounded-lg shadow">
-              <!-- Modal header -->
-              <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t">
-                <h3 class="text-xl font-medium text-gray-900">Sempu Island</h3>
-                <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center" data-modal-hide="slider-4-modal">
-                  <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
-                  </svg>
-                  <span class="sr-only">Close modal</span>
-                </button>
-              </div>
-              <!-- Modal body -->
-              <div class="p-4 md:p-5 space-y-4 flex flex-col lg:flex-row gap-5 lg:gap-6">
-                <img loading="lazy" src="./../../assets/img/destination/slider-4.png" class="rounded-lg h-[300px] md:h-[450px] lg:flex-1 lg:h-auto lg:w-auto lg:object-cover" alt="Sempu Island" />
-                <div class="">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt rerum facere harum dignissimos neque fuga reiciendis unde debitis eos doloribus itaque consequatur cumque minus eum ad quisquam veniam, fugiat placeat quis et alias consectetur voluptate. Voluptatibus repudiandae, aliquid eum, nobis laborum culpa cupiditate voluptas sint dignissimos pariatur nam id odio,
-                  consequuntur necessitatibus! Deserunt nam, deleniti distinctio consectetur sapiente, cumque quisquam laboriosam, reiciendis soluta nihil a eum odio doloribus? Temporibus quia velit rerum laborum harum veritatis! Reprehenderit assumenda quam repellat, vero ipsum perferendis aut exercitationem facilis aperiam tenetur dignissimos veritatis quidem inventore sit iure dolores, aliquam
-                  quod blanditiis voluptas quis. Facere!
-                </div>
-              </div>
-              <!-- Modal footer -->
-            </div>
-          </div>
-        </div>
-        <div id="slider-5-modal" tabindex="-1" class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
-          <div class="relative w-full max-w-5xl max-h-full">
-            <!-- Modal content -->
-            <div class="relative bg-white rounded-lg shadow">
-              <!-- Modal header -->
-              <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t">
-                <h3 class="text-xl font-medium text-gray-900">Sempu Island</h3>
-                <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center" data-modal-hide="slider-5-modal">
-                  <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
-                  </svg>
-                  <span class="sr-only">Close modal</span>
-                </button>
-              </div>
-              <!-- Modal body -->
-              <div class="p-4 md:p-5 space-y-4 flex flex-col lg:flex-row gap-5 lg:gap-6">
-                <img loading="lazy" src="./../../assets/img/destination/slider-5.png" class="rounded-lg h-[300px] md:h-[450px] lg:flex-1 lg:h-auto lg:w-auto lg:object-cover" alt="Sempu Island" />
-                <div class="">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt rerum facere harum dignissimos neque fuga reiciendis unde debitis eos doloribus itaque consequatur cumque minus eum ad quisquam veniam, fugiat placeat quis et alias consectetur voluptate. Voluptatibus repudiandae, aliquid eum, nobis laborum culpa cupiditate voluptas sint dignissimos pariatur nam id odio,
-                  consequuntur necessitatibus! Deserunt nam, deleniti distinctio consectetur sapiente, cumque quisquam laboriosam, reiciendis soluta nihil a eum odio doloribus? Temporibus quia velit rerum laborum harum veritatis! Reprehenderit assumenda quam repellat, vero ipsum perferendis aut exercitationem facilis aperiam tenetur dignissimos veritatis quidem inventore sit iure dolores, aliquam
-                  quod blanditiis voluptas quis. Facere!
-                </div>
-              </div>
-              <!-- Modal footer -->
-            </div>
-          </div>
-        </div>
-        <div id="slider-6-modal" tabindex="-1" class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
-          <div class="relative w-full max-w-5xl max-h-full">
-            <!-- Modal content -->
-            <div class="relative bg-white rounded-lg shadow">
-              <!-- Modal header -->
-              <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t">
-                <h3 class="text-xl font-medium text-gray-900">Sempu Island</h3>
-                <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center" data-modal-hide="slider-6-modal">
-                  <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
-                  </svg>
-                  <span class="sr-only">Close modal</span>
-                </button>
-              </div>
-              <!-- Modal body -->
-              <div class="p-4 md:p-5 space-y-4 flex flex-col lg:flex-row gap-5 lg:gap-6">
-                <img loading="lazy" src="./../../assets/img/destination/slider-6.png" class="rounded-lg h-[300px] md:h-[450px] lg:flex-1 lg:h-auto lg:w-auto lg:object-cover" alt="Sempu Island" />
-                <div class="">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt rerum facere harum dignissimos neque fuga reiciendis unde debitis eos doloribus itaque consequatur cumque minus eum ad quisquam veniam, fugiat placeat quis et alias consectetur voluptate. Voluptatibus repudiandae, aliquid eum, nobis laborum culpa cupiditate voluptas sint dignissimos pariatur nam id odio,
-                  consequuntur necessitatibus! Deserunt nam, deleniti distinctio consectetur sapiente, cumque quisquam laboriosam, reiciendis soluta nihil a eum odio doloribus? Temporibus quia velit rerum laborum harum veritatis! Reprehenderit assumenda quam repellat, vero ipsum perferendis aut exercitationem facilis aperiam tenetur dignissimos veritatis quidem inventore sit iure dolores, aliquam
-                  quod blanditiis voluptas quis. Facere!
-                </div>
-              </div>
-              <!-- Modal footer -->
-            </div>
-          </div>
-        </div>
-        <div id="slider-7-modal" tabindex="-1" class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
-          <div class="relative w-full max-w-5xl max-h-full">
-            <!-- Modal content -->
-            <div class="relative bg-white rounded-lg shadow">
-              <!-- Modal header -->
-              <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t">
-                <h3 class="text-xl font-medium text-gray-900">Sempu Island</h3>
-                <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center" data-modal-hide="slider-7-modal">
-                  <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
-                  </svg>
-                  <span class="sr-only">Close modal</span>
-                </button>
-              </div>
-              <!-- Modal body -->
-              <div class="p-4 md:p-5 space-y-4 flex flex-col lg:flex-row gap-5 lg:gap-6">
-                <img loading="lazy" src="./../../assets/img/destination/slider-7.png" class="rounded-lg h-[300px] md:h-[450px] lg:flex-1 lg:h-auto lg:w-auto lg:object-cover" alt="Sempu Island" />
-                <div class="">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt rerum facere harum dignissimos neque fuga reiciendis unde debitis eos doloribus itaque consequatur cumque minus eum ad quisquam veniam, fugiat placeat quis et alias consectetur voluptate. Voluptatibus repudiandae, aliquid eum, nobis laborum culpa cupiditate voluptas sint dignissimos pariatur nam id odio,
-                  consequuntur necessitatibus! Deserunt nam, deleniti distinctio consectetur sapiente, cumque quisquam laboriosam, reiciendis soluta nihil a eum odio doloribus? Temporibus quia velit rerum laborum harum veritatis! Reprehenderit assumenda quam repellat, vero ipsum perferendis aut exercitationem facilis aperiam tenetur dignissimos veritatis quidem inventore sit iure dolores, aliquam
-                  quod blanditiis voluptas quis. Facere!
-                </div>
-              </div>
-              <!-- Modal footer -->
-            </div>
-          </div>
-        </div>
-        <div id="popup-modal" tabindex="-1" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
-          <div class="relative p-4 w-full max-w-md max-h-full">
-            <div class="relative bg-white rounded-lg shadow">
-              <button type="button" class="absolute top-3 end-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center" data-modal-hide="popup-modal">
-                <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
-                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
-                </svg>
-                <span class="sr-only">Close modal</span>
-              </button>
-              <div class="p-4 md:p-5 text-center">
-                <svg xmlns="http://www.w3.org/2000/svg" class="w-20 h-20 mx-auto" viewBox="0 0 24 24" fill="#1D764A">
-                  <path
-                    d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20ZM11 15H13V17H11V15ZM13 13.3551V14H11V12.5C11 11.9477 11.4477 11.5 12 11.5C12.8284 11.5 13.5 10.8284 13.5 10C13.5 9.17157 12.8284 8.5 12 8.5C11.2723 8.5 10.6656 9.01823 10.5288 9.70577L8.56731 9.31346C8.88637 7.70919 10.302 6.5 12 6.5C13.933 6.5 15.5 8.067 15.5 10C15.5 11.5855 14.4457 12.9248 13 13.3551Z"
-                  ></path>
-                </svg>
-                <h3 class="mb-5 text-lg font-normal text-gray-500">Are you sure you want to subscribe this website?</h3>
-                <button data-modal-hide="popup-modal" type="button" class="text-white bg-green-600 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-red-300font-medium rounded-lg text-sm inline-flex items-center px-5 py-2.5 text-center">Yes, I'm sure</button>
-                <button data-modal-hide="popup-modal" type="button" class="py-2.5 px-5 ms-3 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100">No, cancel</button>
-              </div>
+          <div class="flex justify-between gap-2 mt-10 font-rufina">
+            <pre class="text-lg md:text-3xl lg:text-lg text-end" style="writing-mode: vertical-rl; text-orientation: mixed">Scroll  ..............</pre>
+            <div class="lg:absolute top-0 right-10">
+              <img src="./../assets/img/culinary/hero-mobile.png" class="h-[300px] sm:h-[350px] md:h-[550px] lg:hidden w-auto" alt="" />
+              <img src="./../assets/img/culinary/hero-desktop.png" class="lg:h-[570px] hidden lg:block w-auto" alt="" />
             </div>
           </div>
         </div>
@@ -582,7 +116,7 @@
       <div class="p-3 gap-10 lg:gap-10 container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 auto-rows-min">
         <div class="h-auto border-gray-900 border-b-2 lg:border-0 pb-4">
           <div class="flex justify-center items-center flex-col md:justify-start md:items-start">
-            <img loading="lazy" src="./../../assets/img/main-logo-with-text.png" class="h-auto w-[140px] md:w-[210px]" alt="Logo East Java" />
+            <img loading="lazy" src="./../assets/img/main-logo-with-text.png" class="h-auto w-[140px] md:w-[210px]" alt="Logo East Java" />
             <div class="flex gap-5 justify-center md:justify-start md:pl-3">
               <a href="https://youtube.com/eastjava" class="p-2 hover:bg-black rounded-full group transition flex justify-center items-center">
                 <svg xmlns="http://www.w3.org/2000/svg" class="w-6 md:w-9 h-6 md:h-9 group-hover:fill-white transition" viewBox="0 0 24 24" fill="currentColor">
@@ -629,24 +163,9 @@
         <p class="text-sm md:text-base p-4 max-w-[900px] text-center mx-auto">This site is a site about the land of East Java. All contents contained in this site are for informational purposes and not for commercial purposes. Sales displayed are partnership marks that will connect you to Our Partners.</p>
       </div>
     </footer>
-    <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
     <script src="./../assets/js/sub-page.js"></script>
     <script>
-      window.addEventListener("load", function () {
-        new TypeIt("#subtitle-hero", {
-          strings: "Let's choose where you want to go",
-          speed: 75,
-          startDelay: 400,
-        }).go();
-      });
-      let activityItems = document.querySelectorAll("#accordion-activity .activity-item .list-activity");
-      activityItems.forEach((activityItem) => {
-        activityItem.addEventListener("click", (event) => {
-          event.currentTarget.closest(".activity-item").classList.toggle("activity-active");
-        });
-      });
       let splide = new Splide(".splide", {
         perPage: 1,
         perMove: 1,
@@ -680,39 +199,7 @@
           },
         },
       });
-      let splideDestination = new Splide(".splide-destination", {
-        perPage: 4,
-        perMove: 1,
-        type: "loop",
-        drag: "free",
-        snap: true,
-        arrows: true,
-        autoplay: true,
-        gap: "0.6rem",
-        arrowPath:
-          "M29.3097 18.3342H6.66672C5.74624 18.3342 5.00005 19.0804 5.00005 20.0009C5.00005 20.9214 5.74624 21.6676 6.66672 21.6676H29.3097L23.9053 27.072C23.2544 27.7228 23.2544 28.7781 23.9053 29.429C24.5562 30.0799 25.6114 30.0799 26.2623 29.429L33.3334 22.3579C34.6351 21.0562 34.6351 18.9456 33.3334 17.6439L26.2623 10.5728C25.6114 9.92194 24.5562 9.92194 23.9053 10.5728C23.2544 11.2237 23.2544 12.279 23.9053 12.9298L29.3097 18.3342Z",
-
-        breakpoints: {
-          1000: {
-            perPage: 3,
-            gap: "0.8rem",
-            arrowPath: "m15.5 0.932-4.3 4.38 14.5 14.6-14.5 14.5 4.3 4.4 14.6-14.6 4.4-4.3-4.4-4.4-14.6-14.6z",
-          },
-          640: {
-            perPage: 2,
-            gap: "0.4rem",
-            arrowPath: "m15.5 0.932-4.3 4.38 14.5 14.6-14.5 14.5 4.3 4.4 14.6-14.6 4.4-4.3-4.4-4.4-14.6-14.6z",
-          },
-          480: {
-            perPage: 1,
-            gap: "0.3rem",
-            arrowPath: "m15.5 0.932-4.3 4.38 14.5 14.6-14.5 14.5 4.3 4.4 14.6-14.6 4.4-4.3-4.4-4.4-14.6-14.6z",
-          },
-        },
-      });
-
       splide.mount();
-      splideDestination.mount();
     </script>
   </body>
 </html>

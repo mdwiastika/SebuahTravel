@@ -4,6 +4,7 @@ module.exports = {
   theme: {
     fontFamily: {
       montserrat: ["Montserrat"],
+      rufina: ["Rufina"],
       poppins: ["Poppins"],
       merriweather: ["Merriweather Sans"],
     },
