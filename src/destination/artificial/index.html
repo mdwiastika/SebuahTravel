@@ -105,7 +105,7 @@
       </section>
       <section id="popular-destination" class="p-2 pt-16 md:p-8 md:pt-24 md:-mt-8 lg:p-12 lg:pt-24 lg:-mt-8 relative">
         <div class="hidden md:block md:absolute top-1/2 left-0 w-96">
-          <img loading="lazy" src="./../../assets/img/destination/artificial/slider-1.png" alt="Background Destination" />
+          <img loading="lazy" src="./../../assets/img/destination/bg-2.png" alt="Background Destination" />
         </div>
         <div class="container mx-auto flex justify-center items-center flex-col">
           <h2 class="font-bold text-3xl lg:text-4xl xl:text-5xl text-center text-black-gradient">Most <span class="text-primary">Popular</span> Destination</h2>
@@ -762,7 +762,7 @@
       });
       let splideDestination = new Splide(".splide-destination", {
         perPage: 4,
-        perMove: 1,
+        perMove: 4,
         type: "loop",
         drag: "free",
         snap: true,
@@ -775,16 +775,19 @@
         breakpoints: {
           1000: {
             perPage: 3,
+            perMove: 3,
             gap: "0.8rem",
             arrowPath: "m15.5 0.932-4.3 4.38 14.5 14.6-14.5 14.5 4.3 4.4 14.6-14.6 4.4-4.3-4.4-4.4-14.6-14.6z",
           },
           640: {
             perPage: 2,
+            perMove: 2,
             gap: "0.4rem",
             arrowPath: "m15.5 0.932-4.3 4.38 14.5 14.6-14.5 14.5 4.3 4.4 14.6-14.6 4.4-4.3-4.4-4.4-14.6-14.6z",
           },
           480: {
             perPage: 1,
+            perMove: 1,
             gap: "0.3rem",
             arrowPath: "m15.5 0.932-4.3 4.38 14.5 14.6-14.5 14.5 4.3 4.4 14.6-14.6 4.4-4.3-4.4-4.4-14.6-14.6z",
           },

@@ -212,9 +212,55 @@ nav ul li .hover-navbar:hover::before {
     @apply relative lg:static;
 }
 
+.splide-local-eat .splide__arrow {
+    @apply bg-[#252525]/50 backdrop-blur-md w-[50px] h-[50px] opacity-100;
+}
+
+.splide-local-eat .splide__arrow svg {
+    @apply fill-white;
+}
+
+.splide-popular-food .splide__arrow,
+.splide-popular-drink .splide__arrow {
+    @apply hidden md:flex w-[50px] h-[50px] opacity-100;
+}
+
+.splide-popular-food .splide__arrow.splide__arrow--next,
+.splide-popular-drink .splide__arrow.splide__arrow--next {
+    @apply bg-[#1D764A] shadow-md;
+}
+
+.splide-popular-food .splide__arrow.splide__arrow--prev,
+.splide-popular-drink .splide__arrow.splide__arrow--prev {
+    @apply bg-white shadow-md;
+}
+
+.splide-popular-food .splide__arrow.splide__arrow--next svg,
+.splide-popular-drink .splide__arrow.splide__arrow--next svg {
+    @apply fill-white;
+}
+
+.splide-popular-food .splide__arrow.splide__arrow--prev svg,
+.splide-popular-drink .splide__arrow.splide__arrow--prev svg {
+    @apply fill-[#1D764A];
+}
+
 .activity-item.activity-active .activity-icon {
     @apply rotate-180;
 }
+
+.splide__pagination .splide__pagination--ltr li button {
+    @apply bg-black;
+}
+
+.splide__pagination__page {
+    @apply bg-slate-800;
+}
+
+.splide__pagination__page.is-active {
+    @apply bg-green-500;
+}
+
 
 @keyframes scale {
 
