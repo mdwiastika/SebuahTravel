@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <script src="http://maps.google.com/maps/api/js?key=AIzaSyDLyZ7WFat-XtacG5BHtUG371nDzQc_whg" type="text/javascript"></script>
   </head>
 
   <body class="font-montserrat body-flex">
@@ -74,12 +75,15 @@
       </div>
     </header>
     <main class="min-h-screen">
-      <section id="map" class="py-10 pt-20 lg:pt-24 xl:pt-28 text-center">
+      <section id="travel-map" class="py-10 pt-20 lg:pt-24 xl:pt-28 text-center container mx-auto">
         <h2 class="font-bold text-3xl lg:text-4xl xl:text-5xl text-primary">Map</h2>
         <div class="flex justify-center items-center gap-8 text-lg pt-5 font-medium">
-          <span class="text-gray-600 hover:text-gray-950 cursor-pointer">Event</span>
-          <span class="text-gray-600 hover:text-gray-950 cursor-pointer">Destination</span>
-          <span class="text-gray-600 hover:text-gray-950 cursor-pointer">Culinary</span>
+          <span class="text-gray-600 hover:text-gray-950 cursor-pointer map-toggle" onclick="getMaps(this,'event')" data-terget="event">Event</span>
+          <span class="text-gray-600 hover:text-gray-950 cursor-pointer map-toggle" id="map-destination" onclick="getMaps(this,'destination')" data-terget="destination">Destination</span>
+          <span class="text-gray-600 hover:text-gray-950 cursor-pointer map-toggle" onclick="getMaps(this,'culinary')" data-terget="culinary">Culinary</span>
+        </div>
+        <div class="relative mx-auto">
+          <div id="map" class="max-w-[800px] h-[400px] mx-auto"></div>
         </div>
       </section>
     </main>
@@ -186,6 +190,59 @@
           }
         }
       });
+    </script>
+    <script type="text/javascript">
+      getMaps(document.getElementById("map-destination"), "destination");
+      function getMaps(e, variaty) {
+        document.querySelectorAll(".map-toggle").forEach((el) => {
+          el.classList.remove("active-maps");
+        });
+        e.classList.add("active-maps");
+        let locations;
+        if (variaty == "event") {
+          locations = [["Gunung Bromo", -7.941771, 112.953162]];
+        } else if (variaty == "destination") {
+          locations = [
+            ["Gunung Bromo", -7.941771, 112.953162],
+            ["Kawah Ijen", -8.057549, 114.243272],
+            ["Pantai Papuma", -8.429732, 113.553653],
+            ["Pantai Klayar", -8.220987, 110.947463],
+            ["Air Terjun Madakaripura", -7.847722, 113.016121],
+            ["Pulau Sempu", -8.441016, 112.695213],
+            ["Pantai Plengkung", -8.72575, 114.362473],
+          ];
+        } else {
+          locations = [["Gunung Bromo", -7.941771, 112.953162]];
+        }
+
+        let map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 8,
+          center: new google.maps.LatLng(-7.941771, 112.953162),
+          mapTypeId: google.maps.MapTypeId.ROADMAP,
+        });
+
+        let infowindow = new google.maps.InfoWindow();
+
+        let marker, i;
+
+        for (i = 0; i < locations.length; i++) {
+          marker = new google.maps.Marker({
+            position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+            map: map,
+          });
+
+          google.maps.event.addListener(
+            marker,
+            "click",
+            (function (marker, i) {
+              return function () {
+                infowindow.setContent(locations[i][0]);
+                infowindow.open(map, marker);
+              };
+            })(marker, i)
+          );
+        }
+      }
     </script>
   </body>
 </html>

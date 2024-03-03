@@ -51,6 +51,10 @@
     @apply right-[40rem] animate-listItemShow;
 }
 
+.active-maps {
+    @apply text-gray-950;
+}
+
 .text-primary {
     @apply bg-gradient-to-r from-[#1D764A] to-green-600 inline-block text-transparent bg-clip-text;
 }
