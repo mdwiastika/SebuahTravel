@@ -726,6 +726,10 @@ video {
   z-index: 50;
 }
 
+.z-\[999\] {
+  z-index: 999;
+}
+
 .col-span-1 {
   grid-column: span 1 / span 1;
 }
@@ -946,6 +950,10 @@ video {
 
 .h-\[500px\] {
   height: 500px;
+}
+
+.h-\[600px\] {
+  height: 600px;
 }
 
 .h-\[6px\] {
@@ -1393,9 +1401,9 @@ video {
   border-color: rgb(22 163 74 / var(--tw-border-opacity));
 }
 
-.bg-\[\#263A29\] {
+.bg-\[\#1D764A\] {
   --tw-bg-opacity: 1;
-  background-color: rgb(38 58 41 / var(--tw-bg-opacity));
+  background-color: rgb(29 118 74 / var(--tw-bg-opacity));
 }
 
 .bg-\[\#374151\] {
@@ -1481,6 +1489,11 @@ video {
 
 .bg-white\/30 {
   background-color: rgb(255 255 255 / 0.3);
+}
+
+.bg-\[\#263A29\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(38 58 41 / var(--tw-bg-opacity));
 }
 
 .bg-\[url\(\'\.\/\.\.\/\.\.\/assets\/img\/destination\/hero-artificial-2\.png\'\)\] {
@@ -1633,6 +1646,10 @@ video {
   padding-right: 30%;
 }
 
+.pt-1 {
+  padding-top: 0.25rem;
+}
+
 .pt-10 {
   padding-top: 2.5rem;
 }
@@ -1653,16 +1670,16 @@ video {
   padding-top: 5rem;
 }
 
+.pt-5 {
+  padding-top: 1.25rem;
+}
+
 .pt-6 {
   padding-top: 1.5rem;
 }
 
 .pt-\[56\.25\%\] {
   padding-top: 56.25%;
-}
-
-.pt-5 {
-  padding-top: 1.25rem;
 }
 
 .text-left {
@@ -1808,6 +1825,11 @@ video {
   color: rgb(107 114 128 / var(--tw-text-opacity));
 }
 
+.text-gray-600 {
+  --tw-text-opacity: 1;
+  color: rgb(75 85 99 / var(--tw-text-opacity));
+}
+
 .text-gray-700 {
   --tw-text-opacity: 1;
   color: rgb(55 65 81 / var(--tw-text-opacity));
@@ -1831,11 +1853,6 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-gray-600 {
-  --tw-text-opacity: 1;
-  color: rgb(75 85 99 / var(--tw-text-opacity));
 }
 
 .placeholder-white::-moz-placeholder {
@@ -2069,6 +2086,11 @@ video {
 .nav-active~nav ul li {
   right: 40rem;
   animation: listItemShow 0.2s linear forwards;
+}
+
+.active-maps {
+  --tw-text-opacity: 1;
+  color: rgb(3 7 18 / var(--tw-text-opacity));
 }
 
 .text-primary {
@@ -2769,14 +2791,14 @@ nav ul li .hover-navbar:hover::before {
   color: rgb(17 24 39 / var(--tw-text-opacity));
 }
 
-.hover\:text-white:hover {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
 .hover\:text-gray-950:hover {
   --tw-text-opacity: 1;
   color: rgb(3 7 18 / var(--tw-text-opacity));
+}
+
+.hover\:text-white:hover {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .hover\:grayscale-0:hover {
@@ -3483,11 +3505,6 @@ nav ul li .hover-navbar:hover::before {
   .lg\:py-10 {
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
-  }
-
-  .lg\:py-24 {
-    padding-top: 6rem;
-    padding-bottom: 6rem;
   }
 
   .lg\:pl-10 {
