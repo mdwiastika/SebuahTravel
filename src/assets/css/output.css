@@ -602,6 +602,10 @@ video {
   position: relative;
 }
 
+.sticky {
+  position: sticky;
+}
+
 .inset-0 {
   inset: 0px;
 }
@@ -1401,9 +1405,9 @@ video {
   border-color: rgb(22 163 74 / var(--tw-border-opacity));
 }
 
-.bg-\[\#1D764A\] {
+.bg-\[\#263A29\] {
   --tw-bg-opacity: 1;
-  background-color: rgb(29 118 74 / var(--tw-bg-opacity));
+  background-color: rgb(38 58 41 / var(--tw-bg-opacity));
 }
 
 .bg-\[\#374151\] {
@@ -1491,11 +1495,6 @@ video {
   background-color: rgb(255 255 255 / 0.3);
 }
 
-.bg-\[\#263A29\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(38 58 41 / var(--tw-bg-opacity));
-}
-
 .bg-\[url\(\'\.\/\.\.\/\.\.\/assets\/img\/destination\/hero-artificial-2\.png\'\)\] {
   background-image: url('./../../assets/img/destination/hero-artificial-2.png');
 }
@@ -1510,6 +1509,10 @@ video {
 
 .bg-\[url\(\'\.\/\.\.\/\.\.\/assets\/img\/destination\/hero-nature\.jpg\'\)\] {
   background-image: url('./../../assets/img/destination/hero-nature.jpg');
+}
+
+.bg-\[url\(\'\.\/\.\.\/img\/events\/hero\.png\'\)\] {
+  background-image: url('./../img/events/hero.png');
 }
 
 .bg-\[url\(\'\.\/\.\.\/img\/home\/rect\/rect-1\.png\'\)\] {
@@ -2100,6 +2103,18 @@ video {
   --tw-gradient-to: rgb(29 118 74 / 0) var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
   --tw-gradient-to: #16a34a var(--tw-gradient-to-position);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+}
+
+.text-primary-v2 {
+  display: inline-block;
+  background-image: linear-gradient(to right, var(--tw-gradient-stops));
+  --tw-gradient-from: #00FF81 var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(0 255 129 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+  --tw-gradient-to: #22c55e var(--tw-gradient-to-position);
   -webkit-background-clip: text;
           background-clip: text;
   color: transparent;

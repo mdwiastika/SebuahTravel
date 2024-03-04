@@ -59,6 +59,10 @@
     @apply bg-gradient-to-r from-[#1D764A] to-green-600 inline-block text-transparent bg-clip-text;
 }
 
+.text-primary-v2 {
+    @apply bg-gradient-to-r from-[#00FF81] to-green-500 inline-block text-transparent bg-clip-text;
+}
+
 .bg-primary {
     @apply bg-gradient-to-r from-[#1D764A] to-green-600;
 }
