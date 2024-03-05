@@ -578,3 +578,23 @@ nav ul li .hover-navbar:hover::before {
 .custom-shape-divider-bottom-1708744783 .shape-fill {
     fill: #FFFFFF;
 }
+
+.search {
+    @apply h-[50px] bg-white my-auto p-2.5 rounded-full max-w-[800px];
+}
+
+.search_input {
+    @apply text-black outline-none w-0 caret-transparent leading-10 transition-[width] duration-[0.4s] ease-linear mt-[5px] border-0;
+}
+
+.search .search_input {
+    @apply w-full caret-[limegreen] transition-[width] duration-[0.4s] ease-linear px-2.5 py-0;
+}
+
+.search:hover>.search_icon {
+    @apply text-white bg-green-500 transition-all;
+}
+
+.search_icon {
+    @apply h-[40px] w-[120px] float-right flex justify-center items-center text-[white] bg-[black] rounded-full;
+}
